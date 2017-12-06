@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>E:/RIT Classes 2017-18/IGME 106 Game Dev/Projects/GDAPS2/GDAPS2/Content/Score.spritefont</SourceFile>
+  <SourceTime>2017-10-15T19:17:12-04:00</SourceTime>
+  <DestFile>E:/RIT Classes 2017-18/IGME 106 Game Dev/Projects/GDAPS2/GDAPS2/Content/bin/Windows/Score.xnb</DestFile>
+  <DestTime>2017-11-13T17:52:47.7091618-05:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2017-03-01T10:05:36-05:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2017-03-01T10:05:36-05:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

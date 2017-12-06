@@ -1,0 +1,695 @@
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.CoreCompileInputs.cache
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.CoreCompileInputs.cache
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\vacca\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Documents\GitHub\GDAPS2\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\fireball.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Documents\GitHub\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Documents\GitHub\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+C:\Users\Caleb\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+Z:\IGMProfile\Desktop\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+F:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.CoreCompileInputs.cache
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\EternalHazard\EternalHazard\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+Z:\IGMProfile\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+E:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\MagicUser\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Desktop\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+D:\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Caleb\Desktop\RIT Classes 2017-18\IGME 106 Game Dev\Projects\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.png
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.png
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.png
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\bulletSheet.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\dojoBG.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\enemy1.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\eternal.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\game1.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOver.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameOverKey.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gameScreen.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\gem1.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\hazard.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\menu.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pause.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\player1.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\playerMonk.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\Score.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashBackground.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\splashScreen.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.xnb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.exe
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\GDAPS2.pdb
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\MonoGame.Framework.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.XInput.xml
+F:\GDAPS2\GDAPS2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+F:\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csprojResolveAssemblyReference.cache
+F:\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.ControllerException.resources
+F:\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.csproj.GenerateResource.Cache
+F:\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.exe
+F:\GDAPS2\GDAPS2\obj\x86\Debug\GDAPS2.pdb
