@@ -41,16 +41,17 @@ namespace GDAPS2
         }
 
         // Get Main Game Object ref
-        MainGame mG = new MainGame();
+        MainGame mG;
 
         // Get Bullet Game Object ref
-        Bullet bullet = new Bullet();
-
+        Bullet bullet;
         //overriding spriteclass method
-        public Enemy(Texture2D texture, int frameWidth, int frames) : base(texture, frameWidth, frames)
+        public Enemy(MainGame mg,Texture2D texture, int frameWidth, int frames) : base(texture, frameWidth, frames)
         {           
             bulletcount = 1;
             bulletPattern = 0;
+            mG = mg;
+            bullet = new Bullet(mG, mG.bulletTexture, 200, 1);
         }
 
         //overrides the update method
@@ -85,7 +86,8 @@ namespace GDAPS2
         {
             // increment bullet pattern +1
             bulletPattern++;
-
+            bullet.CyclonePattern(sprites, this.position);
+            /*
             //if bulletPattern is greater than 0
             if (bulletPattern <= 25)
             {
@@ -111,7 +113,7 @@ namespace GDAPS2
             {
                 ResetTimer();
             }
-
+            */
         }
 
         

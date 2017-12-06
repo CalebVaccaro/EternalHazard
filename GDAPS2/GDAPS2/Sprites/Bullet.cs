@@ -26,18 +26,19 @@ namespace GDAPS2
         //int timer check to shoot another bullet
         public int bulletcount;
 
-        MainGame mG = new MainGame();   //Main Game Object
+        MainGame mG;
 
         public Bullet()
         {
-            
+            bulletcount = 1;
         }
 
 
         //overriding spriteclass method
-        public Bullet(Texture2D texture, int frameWidth, int frames) : base(texture, frameWidth, frames)
+        public Bullet(MainGame mg, Texture2D texture, int frameWidth, int frames) : base(texture, frameWidth, frames)
         {
-            // do nothing
+            mG = mg;
+            bulletcount = 1;
         }
 
         //if the lifespan is greater(lasts longer) than bullet dies
@@ -131,31 +132,31 @@ namespace GDAPS2
         #region Bullet Patterns
 
         /// <summary>
-        /// Straight Pattern shoots the bullets (however many are in the bulletCount) in a radial 360 shot
+        /// Straight Pattern shoots the bullets (however many are in the newbullet) in a radial 360 shot
         /// This takes a list sprite parameter from the bullet class
         /// </summary>
         /// <param name="sprites"></param>
         public void CyclonePattern(List<Sprite> sprites, Vector2 position)
         {
-            Bullet[] bulletCount = new Bullet[bulletcount];
+            //Bullet[] newbullet = new Bullet[bulletcount];
 
             //loop foreach bullet in BulletCount add these values
-            for (int i = 0; i < bulletCount.Length; i++)
+            for (int i = 0; i < bulletcount; i++)
             {
                 //bulletCount[i] = this.Clone() as Bullet;
-                bulletCount[i].Direction = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
-                bulletCount[i].position = new Vector2(position.X + 200, position.Y);
-                bulletCount[i].linearVelocity = 5f;
-                bulletCount[i].rotationVelocity = 2;
-                bulletCount[i].scale = .8f;
-                bulletCount[i].rateOfFire = 1;
+                Bullet b = new Bullet(mG, _texture,200,1);
+                b.Direction = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
+                b.position = new Vector2(position.X + 200, position.Y);
+                b.linearVelocity = 5f;
+                b.rotationVelocity = 2;
+                b.scale = .8f;
+                b.rateOfFire = 1;
 
                 //adds bullet to sprite list to be drawn
-                sprites.Add(bulletCount[i]);
+                sprites.Add(b);
 
                 angle += 360 * rotationVelocity;
             }
-
 
         }
 
@@ -168,9 +169,9 @@ namespace GDAPS2
         public void VortexPattern(List<Sprite> sprites, Vector2 position)
         {
 
-            Bullet[] bulletCount = new Bullet[bulletcount];
+            Bullet[] newbullet = new Bullet[bulletcount];
             //loop foreach bullet in BulletCount add these values
-            for (int i = 0; i < bulletCount.Length; i++)
+            for (int i = 0; i < newbullet.Length; i++)
             {
                 Direction = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
 
@@ -194,9 +195,9 @@ namespace GDAPS2
         public void SlowPattern(List<Sprite> sprites, Vector2 position)
         {
 
-            Bullet[] bulletCount = new Bullet[bulletcount];
+            Bullet[] newbullet = new Bullet[bulletcount];
             //loop foreach bullet in BulletCount add these values
-            for (int i = 0; i < bulletCount.Length; i++)
+            for (int i = 0; i < newbullet.Length; i++)
             {
                 Direction = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
 
@@ -219,9 +220,9 @@ namespace GDAPS2
         public void ChangedPattern(List<Sprite> sprites, Vector2 position)
         {
 
-            Bullet[] bulletCount = new Bullet[bulletcount];
+            Bullet[] newbullet = new Bullet[bulletcount];
             //loop foreach bullet in BulletCount add these values
-            for (int i = 0; i < bulletCount.Length; i++)
+            for (int i = 0; i < newbullet.Length; i++)
             {
 
                 Direction = new Vector2((float)Math.Sin(angle), (float)Math.Cos(angle));

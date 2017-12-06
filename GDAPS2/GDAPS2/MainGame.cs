@@ -65,7 +65,7 @@ namespace GDAPS2
         Texture2D gameover;
         Texture2D playerTexture;
         Texture2D enemyTexture;
-        Texture2D bulletTexture;
+        public Texture2D bulletTexture;
         Texture2D splash;
         Texture2D tree;
         Texture2D eternal;
@@ -125,10 +125,10 @@ namespace GDAPS2
             Content.RootDirectory = "Content";
 
             //Preferred Dimensions of the Screen
-            ScreenWidth = graphics.PreferredBackBufferWidth = 1920;
-            ScreenHeight = graphics.PreferredBackBufferHeight = 1080;
+            ScreenWidth = graphics.PreferredBackBufferWidth = 1280;
+            ScreenHeight = graphics.PreferredBackBufferHeight = 720;
             
-            graphics.IsFullScreen = true;   // make window fullscreen
+            graphics.IsFullScreen = false;   // make window fullscreen
             graphics.ApplyChanges();        // apply changes
 
             //initial animated object locations
@@ -191,8 +191,8 @@ namespace GDAPS2
             enemyTexture = Content.Load<Texture2D>("enemy");               //enemy texture
             bulletTexture = Content.Load<Texture2D>("bulletSheet");        //bullet texture
             splash = Content.Load<Texture2D>("splashBackground");          //menu texture 
-            tree = Content.Load<Texture2D>("tree");
-            eternal = Content.Load<Texture2D>("eternal");
+            tree = Content.Load<Texture2D>("tree");                        //tree texture
+            eternal = Content.Load<Texture2D>("eternal");                  //
             hazard = Content.Load<Texture2D>("hazard");
             menu = Content.Load<Texture2D>("menu");
             dojo = Content.Load<Texture2D>("dojoBG");                      //dojo background texture
@@ -681,7 +681,7 @@ namespace GDAPS2
 
                 //Creating a new Enemy Object
                 //New position, Buell Object
-                new Enemy(enemyTexture, 400, 1)
+                new Enemy(this,enemyTexture, 400, 1)
                 {
                     //Set position to the Middle of Screen
                     position = new Vector2(graphics.GraphicsDevice.Viewport.
@@ -690,7 +690,8 @@ namespace GDAPS2
 
                 },
 
-                new Bullet(bulletTexture,200,1)
+                new Bullet(this, bulletTexture, 200, 1)
+                
 
             };
 
@@ -710,7 +711,7 @@ namespace GDAPS2
 
                 //Creating a new Enemy Object
                 //New position, Buell Object
-                new Enemy(enemyTexture, 400, 1)
+                new Enemy(this,enemyTexture, 400, 1)
                 {
                     //Set position to the Middle of Screen
                     position = new Vector2(graphics.GraphicsDevice.Viewport.
@@ -718,7 +719,7 @@ namespace GDAPS2
                        Height / 2)
                 },
 
-                new Bullet(bulletTexture,200,1)
+                new Bullet(this, bulletTexture,200,1)
 
             };
                     break;
@@ -746,7 +747,7 @@ namespace GDAPS2
 
                 //Creating a new Enemy Object
                 //New position, Buell Object
-                new Enemy(enemyTexture,400,1)
+                new Enemy(this,enemyTexture,400,1)
                 {
                     //Set position to the Middle of Screen
                     position = new Vector2(graphics.GraphicsDevice.Viewport.
@@ -784,7 +785,7 @@ namespace GDAPS2
 
                 //Creating a new Enemy Object
                 //New position, Buell Object
-                new Enemy(enemyTexture,400,1)
+                new Enemy(this,enemyTexture,400,1)
                 {
                     //Set position to the Middle of Screen
                     position = new Vector2(graphics.GraphicsDevice.Viewport.
