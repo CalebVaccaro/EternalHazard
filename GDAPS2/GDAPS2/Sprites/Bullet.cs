@@ -138,7 +138,7 @@ namespace GDAPS2
         /// <param name="sprites"></param>
         public void CyclonePattern(List<Sprite> sprites, Vector2 position)
         {
-            //Bullet[] newbullet = new Bullet[bulletcount];
+            //x Bullet[] newbullet = new Bullet[bulletcount];
 
             //loop foreach bullet in BulletCount add these values
             for (int i = 0; i < bulletcount; i++)
@@ -168,24 +168,21 @@ namespace GDAPS2
         /// <param name="sprites"></param>
         public void VortexPattern(List<Sprite> sprites, Vector2 position)
         {
-
-            Bullet[] newbullet = new Bullet[bulletcount];
             //loop foreach bullet in BulletCount add these values
-            for (int i = 0; i < newbullet.Length; i++)
+            for (int i = 0; i < bulletcount; i++)
             {
+                Bullet b = new Bullet(mG, _texture, 200, 1);
                 Direction = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
 
-                var bullets = this.Clone() as Bullet;
-
-                bullets.Direction = Direction;
-                bullets.position = new Vector2(position.X + 200, position.Y);
-                bullets.linearVelocity = 4f;
-                bullets.rotationVelocity = this.rotationVelocity;
-                bullets.scale = .9f;
-                bullets.rateOfFire = 1;
+                b.Direction = Direction;
+                b.position = new Vector2(position.X + 200, position.Y);
+                b.linearVelocity = 4f;
+                b.rotationVelocity = this.rotationVelocity;
+                b.scale = .9f;
+                b.rateOfFire = 1;
 
                 //adds bullet to sprite list to be drawn
-                sprites.Add(bullets);
+                sprites.Add(b);
 
                 angle += 20 * rotationVelocity;
             }

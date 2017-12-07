@@ -14,7 +14,7 @@ using System.Threading;
  * GDAPS2
  * Eternal Hazardz
  * Last Entry: 
- * 11.21.2017
+ * 12.06.2017
  */
 
 namespace GDAPS2
@@ -31,9 +31,9 @@ namespace GDAPS2
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        private List<Sprite> _sprites;  //Creating Sprite List
+        // Creating Sprite List
+        private List<Sprite> _sprites;  
 
-        // misc.
         // int for counting score(placeholder)
         private int score = 0;
         KeyboardState previousState;
@@ -42,9 +42,10 @@ namespace GDAPS2
         // Font
         private SpriteFont font;
 
-        // float 
+        // float timer for general time check
         public float timer;
-        public int bulletPattern;
+        
+        // countdown timer for when to start enemy shooting
         public int countdownTimer;
 
         // ScreenHeight and Width Attributes
@@ -53,11 +54,18 @@ namespace GDAPS2
 
         // enum GameStates to handle each game state {Menu, Game, GameOver}
         enum GameState { Menu, Game, GameOver };
-        GameState state = GameState.Menu;        // gamestate object to acces gamestates
-        int playerCount;                         // how many players in game
-        int lastplayerCount;                     // whatever the lastamount of players it was reload it
 
-        Rectangle mainFrame;                     // Rectangle for all Background Vectors
+        // gamestate object to acces gamestates
+        GameState state = GameState.Menu;
+        
+        // how many players in game
+        int playerCount;
+        
+        // whatever the lastamount of players it was reload it
+        int lastplayerCount;
+
+        // Rectangle for all Background Vectors
+        Rectangle mainFrame;                     
 
         //Texture2Ds for Loading Backgroun/Menu Images
         Texture2D menu;
@@ -81,44 +89,52 @@ namespace GDAPS2
         Vector2 menuCoords;
         Vector2 gameoverCoords;
 
-        //Controller Exception
-        ControllerException cE = new ControllerException();
-
         #endregion
 
     #region Capabilities
+
         //Controller Attributes
-        List<GamePadCapabilities> capabilities = new List<GamePadCapabilities>(); //creates a list of capabilities
+        private List<GamePadCapabilities> capabilities = new List<GamePadCapabilities>(); //creates a list of capabilities
+
+        //number of gamepads in current game
+        private int gamepads;
+
+        // gamepad property
+        public int Gamepads
+        {
+            get { return gamepads; }
+            set { gamepads = value; }
+        }
 
         //capbilities for each controller connected
-        GamePadCapabilities capability1;
-        GamePadCapabilities capability2;
-        GamePadCapabilities capability3;
-        GamePadCapabilities capability4;
+        private GamePadCapabilities capability1;
+        private GamePadCapabilities capability2;
+        private GamePadCapabilities capability3;
+        private GamePadCapabilities capability4;
 
-        //player indexes
-        PlayerIndex player1 = PlayerIndex.One;
-        PlayerIndex player2 = PlayerIndex.Two;
-        PlayerIndex player3 = PlayerIndex.Three;
-        PlayerIndex player4 = PlayerIndex.Four;
+        //player indexes for each player
+        private PlayerIndex player1 = PlayerIndex.One;
+        private PlayerIndex player2 = PlayerIndex.Two;
+        private PlayerIndex player3 = PlayerIndex.Three;
+        private PlayerIndex player4 = PlayerIndex.Four;
 
         //GamePadState stateC will take in all the states
         //used later for input control
-        GamePadState state1;
-        GamePadState state2;
-        GamePadState state3;
+        private GamePadState state1;
+        private GamePadState state2;
+        private GamePadState state3;
+        private GamePadState state4;
 
-        GamePadState previousState1;
-        GamePadState previousState2;
-        GamePadState previousState3;
+        // Previous States for each GamePad
+        private GamePadState previousState1;
+        private GamePadState previousState2;
+        private GamePadState previousState3;
+        private GamePadState previousState4;
 
-        //number of gamepads in current game
-        public int gamepads;
-
-#endregion
+    #endregion
 
     #region Game
-        //Constructor
+        // Main Game Constuctor
         public MainGame()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -129,14 +145,24 @@ namespace GDAPS2
             ScreenHeight = graphics.PreferredBackBufferHeight = 720;
             
             graphics.IsFullScreen = false;   // make window fullscreen
-            graphics.ApplyChanges();        // apply changes
+            graphics.ApplyChanges();         // apply changes
 
             //initial animated object locations
             splashBgCoords = new Vector2(0, 0);
+
+            // Tree Position Position
             treeCoords = new Vector2(1920, 0);
+
+            // Eternal Hazard Title Position
             eternalCoords = new Vector2(550, 350);
+
+            // Hazard Title Coordinates
             hazardCoords = new Vector2(475, 525);
+
+            // Menu Screen Coordinates
             menuCoords = new Vector2(840, 765);
+
+            // Game OVer Screen Text Coordinates
             gameoverCoords = new Vector2(500, 200);
 
         }
@@ -150,7 +176,8 @@ namespace GDAPS2
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            //hero initialized rectangle vector variables
+
+            //set players game pads to -1
             gamepads = -1;
 
             //one controller has to be connected at the start of the game
@@ -158,8 +185,9 @@ namespace GDAPS2
             capability1 = GamePad.GetCapabilities(player1);
             capability2 = GamePad.GetCapabilities(player2);
             capability3 = GamePad.GetCapabilities(player3);
+            capability4 = GamePad.GetCapabilities(player4);
 
-            //Game Manager
+            // CountDown Timer 
             countdownTimer = 200;
 
             //check controllers
@@ -172,6 +200,8 @@ namespace GDAPS2
             previousState1 = GamePad.GetState(player1);
             previousState2 = GamePad.GetState(player2);
             previousState3 = GamePad.GetState(player3);
+            previousState4 = GamePad.GetState(player4);
+
 
             base.Initialize();
         }
@@ -187,21 +217,19 @@ namespace GDAPS2
 
 
             //creating each var Texture for each asset needed to be put into the game         
-            playerTexture = Content.Load<Texture2D>("player1");            //monk texture
-            enemyTexture = Content.Load<Texture2D>("enemy");               //enemy texture
-            bulletTexture = Content.Load<Texture2D>("bulletSheet");        //bullet texture
-            splash = Content.Load<Texture2D>("splashBackground");          //menu texture 
-            tree = Content.Load<Texture2D>("tree");                        //tree texture
-            eternal = Content.Load<Texture2D>("eternal");                  //
-            hazard = Content.Load<Texture2D>("hazard");
-            menu = Content.Load<Texture2D>("menu");
-            dojo = Content.Load<Texture2D>("dojoBG");                      //dojo background texture
-            gameover = Content.Load<Texture2D>("gameOver");                //gameover texture
-            font = Content.Load<SpriteFont>("Score");
-            splashScreen = Content.Load<Texture2D>("splashscreen");
-            gameoverKey = Content.Load<Texture2D>("gameOverKey");
-
-
+            playerTexture = Content.Load<Texture2D>("player1");            // monk texture
+            enemyTexture = Content.Load<Texture2D>("enemy");               // enemy texture
+            bulletTexture = Content.Load<Texture2D>("cyclonebullet");        // bullet texture
+            splash = Content.Load<Texture2D>("splashBackground");          // menu texture 
+            tree = Content.Load<Texture2D>("tree");                        // tree texture
+            eternal = Content.Load<Texture2D>("eternal");                  // Eternal Hazard Title texture
+            hazard = Content.Load<Texture2D>("hazard");                    // Hazard Title Texture
+            menu = Content.Load<Texture2D>("menu");                        // Control Text Texture
+            dojo = Content.Load<Texture2D>("dojoBG");                      // dojo background texture
+            gameover = Content.Load<Texture2D>("gameOver");                // gameover text texture
+            font = Content.Load<SpriteFont>("Score");                      // Font Score texture
+            splashScreen = Content.Load<Texture2D>("splashscreen");        // Spalsh Screen Texture
+            gameoverKey = Content.Load<Texture2D>("gameOverKey");          // Game Over Keyboard Texture
 
             //Background Rectangle
             mainFrame = new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
@@ -225,43 +253,40 @@ namespace GDAPS2
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            //keystate
+            //Get KeyState
             keyState = Keyboard.GetState();
 
             //check controllers
             CheckControllers();
 
-            //switch state 
+            //SWTICH STATEMENT
             switch (state)
             {
 
-                //Menu Game State
-                //Loads Content lets player access game screen or close
+                // --------- MENU STATE ----------- //
                 case GameState.Menu:
 
                     //Load Content
                     LoadContent();
 
-                    //background image
+                    // BACKGROUND IMAGE
                     if (splashBgCoords.X > -100)
                     {
                         splashBgCoords = new Vector2(splashBgCoords.X - 1, splashBgCoords.Y);
                     }
 
-                    //forground tree
+                    // Foreground Tree
                     if (treeCoords.X > -200)
                     {
                         treeCoords = new Vector2(treeCoords.X - 20, treeCoords.Y);
                     }
 
-
+                    // GAMEPAD STATE: 1
                     //if gamepad true, controllers are connected
-                    if (gamepads == 1)
+                    if (Gamepads == 1)
                     {
                         GamePadCapabilities controllerC = GamePad.GetCapabilities(PlayerIndex.One);
-                        //state2 = GamePad.GetState(player2);
-                        //foreach (var controller in capabilities)
-                        //{
+
                         state1 = GamePad.GetState(PlayerIndex.One);
 
                         if (controllerC.GamePadType == GamePadType.GamePad)
@@ -290,14 +315,17 @@ namespace GDAPS2
 
 
 
-
+                    // GAMEPAD STATE: 2
                     //if gamepad true, controllers are connected
-                    if (gamepads == 2)
+                    if (Gamepads == 2)
                     {
                         foreach (var controller in capabilities)
                         {
+
                             state1 = GamePad.GetState(player1);
                             state2 = GamePad.GetState(player2);
+
+
                             if (controller.GamePadType == GamePadType.GamePad)
                             {
                                 // You can also check the controllers "type"
@@ -324,14 +352,18 @@ namespace GDAPS2
 
                     }
 
+                    // GAMEPAD STATE: 3
                     //if gamepad true, controllers are connected
-                    if (gamepads == 3)
+                    if (Gamepads == 3)
                     {
                         foreach (var controller in capabilities)
                         {
+
                             state1 = GamePad.GetState(player1);
                             state2 = GamePad.GetState(player2);
                             state3 = GamePad.GetState(player3);
+
+
                             if (controller.GamePadType == GamePadType.GamePad)
                             {
                                 // You can also check the controllers "type"
@@ -359,7 +391,8 @@ namespace GDAPS2
 
                     }
 
-                    if (gamepads == 0)
+                    // GAMEPAD STATE: KEY(0)
+                    if (Gamepads == 0)
                     {
                         // You can also check the controllers "type"
                         if (Keyboard.GetState().IsKeyDown(Keys.Enter) && !previousState.IsKeyDown(Keys.Enter))
@@ -377,14 +410,18 @@ namespace GDAPS2
                             this.Exit();
                         }
 
+                        // save keystate to previous keystate
                         previousState = keyState;
                     }
 
                     break;
 
+                    // --------- GAME STATE ----------- //
                 case GameState.Game:
 
-                    if (gamepads > 0)
+                    // Gamepads is Greater than 0, Anything
+                    // Anything but KeyState
+                    if (Gamepads > 0)
                     {
 
                         StartCountdown();
@@ -400,7 +437,8 @@ namespace GDAPS2
                         HasDied();
                     }
 
-                    else if (gamepads == 0)
+                    // KeyState for Game
+                    else if (Gamepads == 0)
                     {
                         //start countdown 
                         StartCountdown();
@@ -417,32 +455,35 @@ namespace GDAPS2
                         HasDied();
                     }
 
+                    // save keystate to previous keystated
                     previousState = keyState;
 
                     break;
 
-
+                // --------- GAMEOVER STATE ----------- //
                 case GameState.GameOver:
 
-                    //No Code For GameOVer Yet
+                    // No Code For GameOVer Yet
                     // Check the device for Player One
                     foreach (var controller in capabilities)
                     {
                         //Gamepad State
-                        if (gamepads > 0)
+                        if (Gamepads > 0)
                         {
+                            // initialize gamepad states, with player indexes
                             state1 = GamePad.GetState(player1);
                             state2 = GamePad.GetState(player2);
                             state3 = GamePad.GetState(player3);
-                                if (controller.GamePadType == GamePadType.GamePad)
+
+                            if (controller.GamePadType == GamePadType.GamePad)
+                            {
+                                // You can also check the controllers "type"
+                                if (state1.IsButtonDown(Buttons.Start) || state2.IsButtonDown(Buttons.Start) || state3.IsButtonDown(Buttons.Start) && !previousState1.IsButtonDown(Buttons.Start) && !previousState2.IsButtonDown(Buttons.Start) && !previousState3.IsButtonDown(Buttons.Start))
                                 {
-                                    // You can also check the controllers "type"
-                                    if (state1.IsButtonDown(Buttons.Start) || state2.IsButtonDown(Buttons.Start) || state3.IsButtonDown(Buttons.Start) && !previousState1.IsButtonDown(Buttons.Start) && !previousState2.IsButtonDown(Buttons.Start) && !previousState3.IsButtonDown(Buttons.Start))
-                                    {
-                                        // the button has just been pressed
-                                        // do something here
-                                        state = GameState.Menu;
-                                    }
+                                    // the button has just been pressed
+                                    // do something here
+                                    state = GameState.Menu;
+                                }
 
                                 // You can also check the controllers "type"
                                 if (state1.IsButtonDown(Buttons.Y) || state2.IsButtonDown(Buttons.Y) || state3.IsButtonDown(Buttons.Y) && !previousState1.IsButtonDown(Buttons.Y) && !previousState2.IsButtonDown(Buttons.Y) && !previousState3.IsButtonDown(Buttons.Y))
@@ -453,9 +494,8 @@ namespace GDAPS2
                                 }
 
                             }
-                            
-                        }
 
+                        }
 
                         //previous gamepad sticks = gamepad states
                         previousState1 = state1;
@@ -464,7 +504,7 @@ namespace GDAPS2
                     }
 
                     //Keyboard State
-                    if (gamepads == 0)
+                    if (Gamepads == 0)
                     {
                         if (Keyboard.GetState().IsKeyDown(Keys.Enter) && !previousState.IsKeyDown(Keys.Enter))
                         {
@@ -480,7 +520,7 @@ namespace GDAPS2
                         }
                     }
 
-
+                    //previous gamepad sticks = gamepad states
                     previousState = keyState;
 
                     break;
@@ -497,16 +537,23 @@ namespace GDAPS2
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.DarkGreen);
             // TODO: Add your drawing code here
+
+            // background color
+            GraphicsDevice.Clear(Color.DarkGreen);
+            
+            // Begin Spritebatch
             spriteBatch.Begin();
+
+            // Switch Statement for GAMESTATES
             switch (state)
             {
-
+                // --------- MENU STATE ----------- //
                 case GameState.Menu:
 
                     //display menu image
-                    if (gamepads > 0)
+                    // GAMEPAD STATES
+                    if (Gamepads > 0)
                     {
                         // Opening Transition and Title Screen
                         spriteBatch.Draw(splash, splashBgCoords, Color.White);
@@ -518,9 +565,11 @@ namespace GDAPS2
                         if (treeCoords.X < -180)
                             spriteBatch.Draw(menu, menuCoords, Color.White);
                     }
+
+                    //display menu image
+                    // KEYSTATE STATES
                     else
                     {
-                        //for key
                         // Opening Transition and Title Screen
                         spriteBatch.Draw(splash, splashBgCoords, Color.White);
                         spriteBatch.Draw(tree, treeCoords, Color.White);
@@ -530,41 +579,44 @@ namespace GDAPS2
                             spriteBatch.Draw(hazard, hazardCoords, Color.White);
                         if (treeCoords.X < -180)
                             spriteBatch.Draw(menu, menuCoords, Color.White);
+
                         //spriteBatch.Draw(splashScreen, mainFrame, Color.White);
                         spriteBatch.DrawString(font, "Controllers Are Recommended for this Game", new Vector2(ScreenWidth - 350, ScreenHeight - 150), Color.White);
                     }
                     
                     break;
 
+                // --------- GAME STATE ----------- //
                 case GameState.Game:
                     //drawing the background
                     spriteBatch.Draw(dojo, mainFrame, Color.White);
+
                     //foreach sprite in the list _sprites
                     //Draw the sprites in the spritebatch
-
                     foreach (var sprite in _sprites)
                     {
                         sprite.Draw(spriteBatch);
                     }
 
                     //Text On Screen
-                    //start countdown timer
-                    //spriteBatch.DrawString(font, "Bullet Pattern Time: " + bulletPattern.ToString(), new Vector2(100, 100), Color.White);
                     spriteBatch.DrawString(font, "CountDown: " + countdownTimer.ToString(), new Vector2(ScreenWidth / 2, 10), Color.Red);
                     spriteBatch.DrawString(font, "Time: " + timer.ToString(), new Vector2(ScreenWidth / 2, 50), Color.Black);
 
-                    if (gamepads == 3)
+                    // GAMEPADS: 3
+                    if (Gamepads == 3)
                     {
                         spriteBatch.DrawString(font, "Player 1 Score: " + score.ToString(), new Vector2(60, 20), Color.Blue);
                         spriteBatch.DrawString(font, "Player 2 Score: " + score.ToString(), new Vector2(ScreenWidth - 200, 20), Color.Green);
                         spriteBatch.DrawString(font, "Player 3 Score: " + score.ToString(), new Vector2(60, ScreenHeight - 50), Color.Purple);
                     }
-                    if (gamepads == 2)
+                    // GAMEPADS: 2
+                    if (Gamepads == 2)
                     {
                         spriteBatch.DrawString(font, "Player 1 Score: " + score.ToString(), new Vector2(60, 20), Color.Blue);
                         spriteBatch.DrawString(font, "Player 2 Score: " + score.ToString(), new Vector2(ScreenWidth - 200, 20), Color.Green);
                     }
-                    if(gamepads < 2)
+                    // GAMEPADS: 1 or KEYSTATE(SinglePlayer)
+                    if (Gamepads < 2)
                     {
                         spriteBatch.DrawString(font, "Score: " + score.ToString(), new Vector2(60, 20), Color.Blue);
                     }
@@ -573,16 +625,18 @@ namespace GDAPS2
 
                     break;
 
+                // --------- GAMEOVER STATE ----------- //
                 case GameState.GameOver:
 
                     //GamePads for Controllers
-                    if (gamepads == 1 || gamepads == 2 || gamepads == 3)
+                    if (Gamepads == 1 || Gamepads == 2 || Gamepads == 3)
                     {
                         spriteBatch.Draw(splash, mainFrame, Color.White);
                         spriteBatch.Draw(gameover, gameoverCoords, Color.White);
                         Results();
                     }
-                    if(gamepads == 0)
+                    // KEYSTATE
+                    if(Gamepads == 0)
                     {
                         spriteBatch.Draw(gameoverKey, mainFrame, Color.White);
                         Results();
@@ -594,6 +648,7 @@ namespace GDAPS2
 
             //End SpriteBatch Drawing
             spriteBatch.End();
+
             base.Draw(gameTime);
         }
 
@@ -605,25 +660,35 @@ namespace GDAPS2
         /// <param name="_sprites"></param>
         public void HasDied()
         {
+            // For each sprite in sprite list
             for (int i = 0; i < _sprites.Count; i++)
             {
+                // make new sprite object foreach sprite in the list
                 Sprite sprite = _sprites[i];
 
                 // if the sprite is a player then true
                 if (sprite is Player)
                 {
+                    // Make Player Object, if sprite is a player
                     Player player = sprite as Player;
+
+                    // if has died is true, kill player
                     if (player.HasDied == true)
                     {
+                        // player is removed
                         player.isRemoved = true;
+
+                        // decrement playerCount -1
                         playerCount -= 1;
+
+                        // get death time
                         player.DeathTime = (int)timer;
                     }
                 }
 
             }
             
-
+            // IF NO PLAYERS ARE LEFT GO To Game Over State
             if(playerCount == 0)
             {
                 state = GameState.GameOver;
@@ -639,161 +704,126 @@ namespace GDAPS2
             //set state to Game
             state = GameState.Game;
 
-            //reset timer
-            timer = 0;
-            countdownTimer = 200;
+            // Reset Timer
+            ResetTimer();
 
-
-
-            //gets last player count and loads up the amount of players
-            if (lastplayerCount == 3)
-            {
-                playerCount = 3;
-            }
-            if (lastplayerCount == 2)
-            {
-                playerCount = 2;
-            }
-
-            if(lastplayerCount == 1)
-            {
-                playerCount = 1;
-            }
-
-
-            //takes in playerCount for condition
-            switch (gamepads)
+         //takes in playerCount for condition
+            switch (Gamepads)
             {
                 //KeyBoard Case
                 case 0:
 
-                    //list of sprites are created in MainGame
-                    _sprites = new List<Sprite>()
-            {
-                //Have to get this sprite list from player
-                 new Player(playerTexture,50,8)
-                 {
-                     position = new Vector2(200,200),
-                     playerColor = Color.White,
+                    // Instantiate Sprite List
+                    _sprites = new List<Sprite>
+                    {
+                        // Add Players to Sprite List
 
-                 },
+                        // Player 1
+                        new Player(this,playerTexture, capability1, player1, state1, 50, 8){
+                            position = new Vector2(200,200)
+                        },
 
+                        // Add Enemy to the Sprite List
+                        new Enemy(this, enemyTexture, 400, 1){
+                            //Set position to the Middle of Screen
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                        },
 
-                //Creating a new Enemy Object
-                //New position, Buell Object
-                new Enemy(this,enemyTexture, 400, 1)
-                {
-                    //Set position to the Middle of Screen
-                    position = new Vector2(graphics.GraphicsDevice.Viewport.
-                       Width / 2 - 200,graphics.GraphicsDevice.Viewport.
-                       Height / 2),
-
-                },
-
-                new Bullet(this, bulletTexture, 200, 1)
-                
-
-            };
+                        // Add Bulet Object to the Sprite List
+                        new Bullet(this, bulletTexture, 200, 1)
+                    };
 
                     break;
 
+                // GamePadeState: 1
                 case 1:
-                    //list of sprites are created in MainGame
-                    _sprites = new List<Sprite>()
-            {
-                //Have to get this sprite list from player
-                 new Player(playerTexture, capability1,player1,state1,50,8)
-                 {
-                     position = new Vector2(200,200),
-                     playerColor = Color.White,
-                 },
+                    // Instantiate Sprite List
+                    _sprites = new List<Sprite>
+                    {
+                        // Add Players to Sprite List
 
+                        // Player 1
+                        new Player(this,playerTexture, capability1, player1, state1, 50, 8){
+                            position = new Vector2(200,200),
+                            playerColor = Color.Blue,
+                        },
 
-                //Creating a new Enemy Object
-                //New position, Buell Object
-                new Enemy(this,enemyTexture, 400, 1)
-                {
-                    //Set position to the Middle of Screen
-                    position = new Vector2(graphics.GraphicsDevice.Viewport.
-                       Width / 2 - 200,graphics.GraphicsDevice.Viewport.
-                       Height / 2)
-                },
+                        // Add Enemy to the Sprite List
+                        new Enemy(this, enemyTexture, 400, 1){
+                            //Set position to the Middle of Screen
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                        },
 
-                new Bullet(this, bulletTexture,200,1)
-
-            };
+                        // Add Bulet Object to the Sprite List
+                        new Bullet(this, bulletTexture, 200, 1)
+                    };
                     break;
 
 
-
+                // GamePadeState: 2
                 case 2:
 
-                    //list of sprites are created in MainGame
-                    _sprites = new List<Sprite>()
-            {
+                    // Instantiate Sprite List
+                    _sprites = new List<Sprite>
+                    {
+                        // Add Players to Sprite List
 
+                        // Player 1
+                        new Player(this, playerTexture, capability1, player1, state1, 50, 8){
+                            position = new Vector2(200,200),
+                            playerColor = Color.Blue,
+                        },
+                        // Player 2
+                        new Player(this, playerTexture, capability2, player2, state2, 50, 8){
+                            position = new Vector2(ScreenWidth - 200,200),
+                            playerColor = Color.Green,
+                        },
 
-                //Have to get this sprite list from player
-                 new Player(playerTexture, capability1,player1,state1,50,8)
-                 {
-                     position = new Vector2(200,200),
-                     playerColor = Color.Blue,
-                 },
-                 new Player(playerTexture, capability2,player2,state2,50,8)
-                 {
-                     position = new Vector2(800,800),
-                     playerColor = Color.Green,
-                 },
+                        // Add Enemy to the Sprite List
+                        new Enemy(this, enemyTexture, 400, 1){
+                            //Set position to the Middle of Screen
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                        },
 
-                //Creating a new Enemy Object
-                //New position, Buell Object
-                new Enemy(this,enemyTexture,400,1)
-                {
-                    //Set position to the Middle of Screen
-                    position = new Vector2(graphics.GraphicsDevice.Viewport.
-                       Width / 2 - 200,graphics.GraphicsDevice.Viewport.
-                       Height / 2),
-                },
-
-            };
+                        // Add Bulet Object to the Sprite List
+                        new Bullet(this, bulletTexture, 200, 1)
+                    };
 
                     break;
 
+                // GamePadeState: 3
                 case 3:
 
-                    //list of sprites are created in MainGame
-                    _sprites = new List<Sprite>()
-            {
+                    // Instantiate Sprite List
+                    _sprites = new List<Sprite>
+                    {
+                        // Add Players to Sprite List
 
+                        // Player 1
+                        new Player(this, playerTexture, capability1, player1, state1, 50, 8){
+                            position = new Vector2(200,200),
+                            playerColor = Color.Blue,
+                        },
+                        // Player 2
+                        new Player(this, playerTexture, capability2, player2, state2, 50, 8){
+                            position = new Vector2(ScreenWidth - 200,200),
+                            playerColor = Color.Green,
+                        },
+                        // Player 3
+                        new Player(this, playerTexture, capability3, player3, state3, 50, 8){
+                            position = new Vector2(200,ScreenHeight - 200),
+                            playerColor = Color.Purple,
+                        },
 
-                //Have to get this sprite list from player
-                 new Player(playerTexture, capability1,player1,state1,50,8)
-                 {
-                     position = new Vector2(200,200),
-                     playerColor = Color.Blue,
-                 },
-                 new Player(playerTexture, capability2,player2,state2,50,8)
-                 {
-                     position = new Vector2(ScreenWidth - 200,200),
-                     playerColor = Color.Green,
-                 },
-                 new Player(playerTexture, capability3,player3,state3,50,8)
-                 {
-                     position = new Vector2(200,ScreenHeight - 200),
-                     playerColor = Color.Purple,
-                 },
+                        // Add Enemy to the Sprite List
+                        new Enemy(this, enemyTexture, 400, 1){
+                            //Set position to the Middle of Screen
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                        },
 
-                //Creating a new Enemy Object
-                //New position, Buell Object
-                new Enemy(this,enemyTexture,400,1)
-                {
-                    //Set position to the Middle of Screen
-                    position = new Vector2(graphics.GraphicsDevice.Viewport.
-                       Width / 2 - 200,graphics.GraphicsDevice.Viewport.
-                       Height / 2)
-                },
-
-            };
+                        // Add Bulet Object to the Sprite List
+                        new Bullet(this, bulletTexture, 200, 1)
+                    };
 
                     break;
 
@@ -802,15 +832,18 @@ namespace GDAPS2
 
         }
 
-        //this will start as soon as the game starts
-        //this method will recursively count down timer
-        //and begin firing bullets
+        /// <summary>
+        /// Start Countdown Timer
+        /// Set Enemy Can Shoot if Coutdown hits Zero
+        /// </summary>
         public void StartCountdown()
         {
             //end condition, countdown expired
             if (countdownTimer <= 0)
             {
+                // Increment timer +1
                 timer++;
+
                 //cycle through list of sprites
                 for (int i = 0; i < _sprites.Count; i++)
                 {
@@ -820,7 +853,7 @@ namespace GDAPS2
                     //if current sprite is enemy
                     if (sprite is Enemy)
                     {
-                        //create enemy object
+                        //create enemy object, if sprite is an Enemy
                         Enemy enemy = sprite as Enemy;
                         
                         //set its can shoot property
@@ -832,12 +865,15 @@ namespace GDAPS2
                
             }
 
-            //normal condition, decrement counter
+            //normal condition, decrement counter -1
             countdownTimer--;
-
 
         }
 
+        /// <summary>
+        /// Check Controllers, Checks How Many Controllers are being used
+        /// Sets the Player Count and 
+        /// </summary>
         public void CheckControllers()
         {
             // Check the device for Player One
@@ -847,6 +883,7 @@ namespace GDAPS2
             capability2 = GamePad.GetCapabilities(player2);
             capability3 = GamePad.GetCapabilities(player3);
 
+            // checking for 3 controllers connected
             if (capability1.IsConnected && capability2.IsConnected && capability3.IsConnected)
             {
 
@@ -855,28 +892,30 @@ namespace GDAPS2
                 capabilities.Add(capability1);
                 capabilities.Add(capability2);
                 capabilities.Add(capability3);
-                gamepads = 3;
+                Gamepads = 3;
                 playerCount = 3;
                 lastplayerCount = playerCount;
             }
 
-            if (capability1.IsConnected && capability2.IsConnected)
+            // checking for 2 controllers connected
+            else if (capability1.IsConnected && capability2.IsConnected)
             {
 
                 //capabilities.Add(capability2);    //add each capabilityu added to a list
                 //if gamepad capability is connected then gamepad bool is true
                 capabilities.Add(capability1);
                 capabilities.Add(capability2);
-                gamepads = 2;
+                Gamepads = 2;
                 playerCount = 2;
                 lastplayerCount = playerCount;
             }
 
+            // checking for 1 controllers connected
             else if (capability1.IsConnected)
             {
                 state1 = GamePad.GetState(player1);
                 capabilities.Add(capability1);      //add each capabilityu added to a list 
-                gamepads = 1;
+                Gamepads = 1;
                 playerCount = 1;                    //if gamepad capability is connected then gamepad bool is true
                 lastplayerCount = playerCount;
             }
@@ -884,24 +923,31 @@ namespace GDAPS2
             //Keyboard State
             else
             {
-                gamepads = 0;
+                Gamepads = 0;
                 playerCount = 1;
                 lastplayerCount = playerCount;
             }
         }
 
+        /// <summary>
+        /// Get Keyboard Access
+        /// Allowed to Use Keyboard Controls
+        /// </summary>
+        /// <returns></returns>
         public bool KeyboardAccess()
         {
             //bool to let player use keyboard
             bool keyboardState = false;
 
-            if (gamepads == 0)
+            // check if gamepad is 0
+            if (Gamepads == 0)
             {
                 keyboardState = true;
 
                 return keyboardState;
             }
 
+            // if still false return false
             return keyboardState;
         }
         
@@ -911,7 +957,7 @@ namespace GDAPS2
         /// </summary>
         public void Results()
         {
-            //cycle through list of sprites
+            //loop through list of sprites
             for (int i = 0; i < _sprites.Count; i++)
             {
                 //store currently indexed sprite
@@ -920,8 +966,10 @@ namespace GDAPS2
                 //if current sprite is enemy
                 if (sprite is Player)
                 {
+                    //create player object, if sprite is an Player
                     Player player = sprite as Player;
 
+                    // check if player has not died yet
                     if (player.HasDied == false)
                     {
                         spriteBatch.DrawString(font, "Player has survived: Player " + player.PlayerIndex, player.position, Color.White);
@@ -930,10 +978,20 @@ namespace GDAPS2
                     {
                         spriteBatch.DrawString(font, player.PlayerIndex + ": has not survived  Time Lasted To: " + player.DeathTime, player.position, Color.White);
                     }
-
-                    return;
                 }
             }
+        }
+
+        /// <summary>
+        /// Reset Timer Main Timer to 0
+        /// CountDown Timer is reset
+        /// </summary>
+        public void ResetTimer()
+        {
+            //reset timer
+            timer = 0;
+            // countdown timer
+            countdownTimer = 200;
         }
 
         #endregion

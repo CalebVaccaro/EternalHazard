@@ -15,7 +15,6 @@ namespace GDAPS2
     public class Player : Sprite
     {
         //Attributes
-
         private bool hasDied = false;
         private bool gameover = false;
         public Color playerColor;
@@ -25,11 +24,13 @@ namespace GDAPS2
         private int deathTime;
 
         // int to count player score
+        private int score;
 
-        
-        MainGame mG = new MainGame();   //Main Game Object
+        //Main Game Object
+        MainGame mG;
 
-        public Bullet bullet;   //Sprite Class Object
+        //Sprite Class Object
+        public Bullet bullet;   
 
         //Attributes to get the controllers:
         private GamePadCapabilities capability; //capability 
@@ -57,6 +58,12 @@ namespace GDAPS2
             set { deathTime = value; }
         }
 
+        public int Score
+        {
+            get { return score; }
+            set { score = value; }
+        }
+
         //enumeration for image flipping
         private enum PlayerDirection { MovingLeft, MovingRight };
         PlayerDirection playerFacing = PlayerDirection.MovingRight;
@@ -64,7 +71,7 @@ namespace GDAPS2
         //create a new constructor for Player from Sprite
         //Instantiate Movement and First position
         //since we only need to do this to get our Update method and attributes from Sprite
-        public Player(Texture2D texture, GamePadCapabilities capability, PlayerIndex pi, GamePadState gpstate, int frameWidth, int frames) : base(texture, frameWidth, frames)
+        public Player(MainGame mg, Texture2D texture, GamePadCapabilities capability, PlayerIndex pi, GamePadState gpstate, int frameWidth, int frames) : base(texture, frameWidth, frames)
         {
             // Check the device for Player One
             this.capability = capability;
@@ -72,7 +79,7 @@ namespace GDAPS2
             state = gpstate;
 
             scale = .75f;
-
+            mG = mg;
             
         }
 
