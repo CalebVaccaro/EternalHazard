@@ -31,16 +31,27 @@ namespace GDAPS2
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        // ---- Player/Sprite Attributes  ---- //
+
         // Creating Sprite List
         private List<Sprite> _sprites;  
 
         // int for counting score(placeholder)
         private int score = 0;
-        KeyboardState previousState;
-        KeyboardState keyState;
 
-        // Font
-        private SpriteFont font;
+        // how many players in game
+        int playerCount;
+
+        // whatever the lastamount of players it was reload it
+        int lastplayerCount;
+
+        // ----- Game Manager Attributes ---- //
+
+        // enum GameStates to handle each game state {Menu, Game, GameOver}
+        enum GameState { Menu, Game, GameOver };
+
+        // gamestate object to acces gamestates
+        GameState state = GameState.Menu;
 
         // float timer for general time check
         public float timer;
@@ -52,20 +63,11 @@ namespace GDAPS2
         public int ScreenWidth;
         public int ScreenHeight;
 
-        // enum GameStates to handle each game state {Menu, Game, GameOver}
-        enum GameState { Menu, Game, GameOver };
-
-        // gamestate object to acces gamestates
-        GameState state = GameState.Menu;
-        
-        // how many players in game
-        int playerCount;
-        
-        // whatever the lastamount of players it was reload it
-        int lastplayerCount;
+        // font for printing text on screen
+        private SpriteFont font;
 
         // Rectangle for all Background Vectors
-        Rectangle mainFrame;                     
+        private Rectangle mainFrame;
 
         //Texture2Ds for Loading Backgroun/Menu Images
         Texture2D menu;
@@ -91,10 +93,13 @@ namespace GDAPS2
 
         #endregion
 
-    #region Capabilities
+        #region Capabilities
 
         //Controller Attributes
         private List<GamePadCapabilities> capabilities = new List<GamePadCapabilities>(); //creates a list of capabilities
+
+        private KeyboardState previousState;
+        private KeyboardState keyState;
 
         //number of gamepads in current game
         private int gamepads;
@@ -113,10 +118,10 @@ namespace GDAPS2
         private GamePadCapabilities capability4;
 
         //player indexes for each player
-        private PlayerIndex player1 = PlayerIndex.One;
-        private PlayerIndex player2 = PlayerIndex.Two;
-        private PlayerIndex player3 = PlayerIndex.Three;
-        private PlayerIndex player4 = PlayerIndex.Four;
+        private PlayerIndex playerone = PlayerIndex.One;
+        private PlayerIndex playertwo = PlayerIndex.Two;
+        private PlayerIndex playerthree = PlayerIndex.Three;
+        private PlayerIndex playerfour = PlayerIndex.Four;
 
         //GamePadState stateC will take in all the states
         //used later for input control
@@ -182,10 +187,10 @@ namespace GDAPS2
 
             //one controller has to be connected at the start of the game
             //once the game has loaded you can add more 
-            capability1 = GamePad.GetCapabilities(player1);
-            capability2 = GamePad.GetCapabilities(player2);
-            capability3 = GamePad.GetCapabilities(player3);
-            capability4 = GamePad.GetCapabilities(player4);
+            capability1 = GamePad.GetCapabilities(playerone);
+            capability2 = GamePad.GetCapabilities(playertwo);
+            capability3 = GamePad.GetCapabilities(playerthree);
+            capability4 = GamePad.GetCapabilities(playerfour);
 
             // CountDown Timer 
             countdownTimer = 200;
@@ -197,10 +202,10 @@ namespace GDAPS2
             previousState = Keyboard.GetState();
 
             //Get Old gamepad state
-            previousState1 = GamePad.GetState(player1);
-            previousState2 = GamePad.GetState(player2);
-            previousState3 = GamePad.GetState(player3);
-            previousState4 = GamePad.GetState(player4);
+            previousState1 = GamePad.GetState(playerone);
+            previousState2 = GamePad.GetState(playertwo);
+            previousState3 = GamePad.GetState(playerthree);
+            previousState4 = GamePad.GetState(playerfour);
 
 
             base.Initialize();
@@ -232,9 +237,7 @@ namespace GDAPS2
             gameoverKey = Content.Load<Texture2D>("gameOverKey");          // Game Over Keyboard Texture
 
             //Background Rectangle
-            mainFrame = new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
-
-            
+            mainFrame = new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);   
         }
 
         /// <summary>
@@ -281,13 +284,37 @@ namespace GDAPS2
                         treeCoords = new Vector2(treeCoords.X - 20, treeCoords.Y);
                     }
 
+                    // GAMEPAD STATE: KEY(0)
+                    if (Gamepads == 0)
+                    {
+                        // You can also check the controllers "type"
+                        if (Keyboard.GetState().IsKeyDown(Keys.Enter) && !previousState.IsKeyDown(Keys.Enter))
+                        {
+                            // the button has just been pressed
+                            // do something here
+                            NewGame();
+                        }
+
+                        // You can also check the controllers "type"
+                        if (Keyboard.GetState().IsKeyDown(Keys.Escape) && !previousState.IsKeyDown(Keys.Escape))
+                        {
+                            // the button has just been pressed
+                            // do something here
+                            this.Exit();
+                        }
+
+                        // save keystate to previous keystate
+                        previousState = keyState;
+                    }
+
                     // GAMEPAD STATE: 1
                     //if gamepad true, controllers are connected
                     if (Gamepads == 1)
                     {
                         GamePadCapabilities controllerC = GamePad.GetCapabilities(PlayerIndex.One);
 
-                        state1 = GamePad.GetState(PlayerIndex.One);
+                        // Get New Controller State, adding the player index
+                        state1 = GamePad.GetState(playerone);
 
                         if (controllerC.GamePadType == GamePadType.GamePad)
                         {
@@ -322,14 +349,16 @@ namespace GDAPS2
                         foreach (var controller in capabilities)
                         {
 
-                            state1 = GamePad.GetState(player1);
-                            state2 = GamePad.GetState(player2);
+                            // Get New Controller State, adding the player index
+                            state1 = GamePad.GetState(playerone);
+                            state2 = GamePad.GetState(playertwo);
 
 
                             if (controller.GamePadType == GamePadType.GamePad)
                             {
                                 // You can also check the controllers "type"
-                                if (state1.IsButtonDown(Buttons.Start) || state2.IsButtonDown(Buttons.Start) && !previousState1.IsButtonDown(Buttons.Start) && !previousState2.IsButtonDown(Buttons.Start))
+                                if (state1.IsButtonDown(Buttons.Start) || state2.IsButtonDown(Buttons.Start) 
+                                    && !previousState1.IsButtonDown(Buttons.Start) && !previousState2.IsButtonDown(Buttons.Start))
                                 {
                                     // the button has just been pressed
                                     // do something here
@@ -337,7 +366,8 @@ namespace GDAPS2
                                 }
 
                                 // You can also check the controllers "type"
-                                if (state1.IsButtonDown(Buttons.Y) || state2.IsButtonDown(Buttons.Y) && !previousState1.IsButtonDown(Buttons.Y) && !previousState2.IsButtonDown(Buttons.Y))
+                                if (state1.IsButtonDown(Buttons.Y) || state2.IsButtonDown(Buttons.Y) 
+                                    && !previousState1.IsButtonDown(Buttons.Y) && !previousState2.IsButtonDown(Buttons.Y))
                                 {
                                     // the button has just been pressed
                                     // do something here
@@ -359,15 +389,17 @@ namespace GDAPS2
                         foreach (var controller in capabilities)
                         {
 
-                            state1 = GamePad.GetState(player1);
-                            state2 = GamePad.GetState(player2);
-                            state3 = GamePad.GetState(player3);
+                            // Get New Controller State, adding the player index
+                            state1 = GamePad.GetState(playerone);
+                            state2 = GamePad.GetState(playertwo);
+                            state3 = GamePad.GetState(playerthree);
 
 
                             if (controller.GamePadType == GamePadType.GamePad)
                             {
                                 // You can also check the controllers "type"
-                                if (state1.IsButtonDown(Buttons.Start) || state2.IsButtonDown(Buttons.Start) || state3.IsButtonDown(Buttons.Start) && !previousState1.IsButtonDown(Buttons.Start) && !previousState2.IsButtonDown(Buttons.Start) && !previousState3.IsButtonDown(Buttons.Start))
+                                if (state1.IsButtonDown(Buttons.Start) || state2.IsButtonDown(Buttons.Start) || state3.IsButtonDown(Buttons.Start) 
+                                    && !previousState1.IsButtonDown(Buttons.Start) && !previousState2.IsButtonDown(Buttons.Start) && !previousState3.IsButtonDown(Buttons.Start))
                                 {
                                     // the button has just been pressed
                                     // do something here
@@ -375,7 +407,8 @@ namespace GDAPS2
                                 }
 
                                 // You can also check the controllers "type"
-                                if (state1.IsButtonDown(Buttons.Y) || state2.IsButtonDown(Buttons.Y) || state3.IsButtonDown(Buttons.Y) && !previousState1.IsButtonDown(Buttons.Y) && !previousState2.IsButtonDown(Buttons.Y) && !previousState3.IsButtonDown(Buttons.Y))
+                                if (state1.IsButtonDown(Buttons.Y) || state2.IsButtonDown(Buttons.Y) || state3.IsButtonDown(Buttons.Y) 
+                                    && !previousState1.IsButtonDown(Buttons.Y) && !previousState2.IsButtonDown(Buttons.Y) && !previousState3.IsButtonDown(Buttons.Y))
                                 {
                                     // the button has just been pressed
                                     // do something here
@@ -391,27 +424,48 @@ namespace GDAPS2
 
                     }
 
-                    // GAMEPAD STATE: KEY(0)
-                    if (Gamepads == 0)
+                    // GAMEPAD STATE: 3
+                    //if gamepad true, controllers are connected
+                    if (Gamepads == 4)
                     {
-                        // You can also check the controllers "type"
-                        if (Keyboard.GetState().IsKeyDown(Keys.Enter) && !previousState.IsKeyDown(Keys.Enter))
+                        foreach (var controller in capabilities)
                         {
-                            // the button has just been pressed
-                            // do something here
-                            NewGame();
+
+                            // Get New Controller State, adding the player index
+                            state1 = GamePad.GetState(playerone);
+                            state2 = GamePad.GetState(playertwo);
+                            state3 = GamePad.GetState(playerthree);
+                            state4 = GamePad.GetState(playerfour);
+
+
+                            if (controller.GamePadType == GamePadType.GamePad)
+                            {
+                                // checking for controller Start Button Input
+                                if (state1.IsButtonDown(Buttons.Start) || state2.IsButtonDown(Buttons.Start) || state3.IsButtonDown(Buttons.Start) || state4.IsButtonDown(Buttons.Start) 
+                                    && !previousState1.IsButtonDown(Buttons.Start) && !previousState2.IsButtonDown(Buttons.Start) && !previousState3.IsButtonDown(Buttons.Start) && !previousState4.IsButtonDown(Buttons.Start))
+                                {
+                                    // the button has just been pressed
+                                    // do something here
+                                    NewGame();
+                                }
+
+                                // checking for controller Y Button Input
+                                if (state1.IsButtonDown(Buttons.Y) || state2.IsButtonDown(Buttons.Y) || state3.IsButtonDown(Buttons.Y) || state4.IsButtonDown(Buttons.Y)
+                                    && !previousState1.IsButtonDown(Buttons.Y) && !previousState2.IsButtonDown(Buttons.Y) && !previousState3.IsButtonDown(Buttons.Y) && !previousState4.IsButtonDown(Buttons.Y))
+                                {
+                                    // the button has just been pressed
+                                    // do something here
+                                    this.Exit();
+                                }
+                            }
                         }
 
-                        // You can also check the controllers "type"
-                        if (Keyboard.GetState().IsKeyDown(Keys.Escape) && !previousState.IsKeyDown(Keys.Escape))
-                        {
-                            // the button has just been pressed
-                            // do something here
-                            this.Exit();
-                        }
+                        //previous gamepad sticks = gamepad states
+                        previousState1 = state1;
+                        previousState2 = state2;
+                        previousState3 = state3;
+                        previousState4 = state4;
 
-                        // save keystate to previous keystate
-                        previousState = keyState;
                     }
 
                     break;
@@ -427,8 +481,9 @@ namespace GDAPS2
                         StartCountdown();
                         //Foreach Sprite in the List, Call Update
                         //Used to Fire Bullets
-                        foreach (var sprite in _sprites.ToArray())
+                        foreach (var sprite in _sprites)
                         {
+                            // call Update methods foreach sprite in the list
                             sprite.Update(gameTime, _sprites);
 
                         }
@@ -471,10 +526,12 @@ namespace GDAPS2
                         if (Gamepads > 0)
                         {
                             // initialize gamepad states, with player indexes
-                            state1 = GamePad.GetState(player1);
-                            state2 = GamePad.GetState(player2);
-                            state3 = GamePad.GetState(player3);
+                            state1 = GamePad.GetState(playerone);
+                            state2 = GamePad.GetState(playertwo);
+                            state3 = GamePad.GetState(playerthree);
+                            state4 = GamePad.GetState(playerfour);
 
+                            // if controller gamepad is connected
                             if (controller.GamePadType == GamePadType.GamePad)
                             {
                                 // You can also check the controllers "type"
@@ -501,6 +558,7 @@ namespace GDAPS2
                         previousState1 = state1;
                         previousState2 = state2;
                         previousState3 = state3;
+                        previousState4 = state4;
                     }
 
                     //Keyboard State
@@ -716,10 +774,8 @@ namespace GDAPS2
                     // Instantiate Sprite List
                     _sprites = new List<Sprite>
                     {
-                        // Add Players to Sprite List
-
                         // Player 1
-                        new Player(this,playerTexture, capability1, player1, state1, 50, 8){
+                        new Player(this,playerTexture, capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200)
                         },
 
@@ -743,7 +799,7 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this,playerTexture, capability1, player1, state1, 50, 8){
+                        new Player(this,playerTexture, capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200),
                             playerColor = Color.Blue,
                         },
@@ -769,12 +825,12 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this, playerTexture, capability1, player1, state1, 50, 8){
+                        new Player(this, playerTexture, capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200),
                             playerColor = Color.Blue,
                         },
                         // Player 2
-                        new Player(this, playerTexture, capability2, player2, state2, 50, 8){
+                        new Player(this, playerTexture, capability2, playertwo, state2, 50, 8){
                             position = new Vector2(ScreenWidth - 200,200),
                             playerColor = Color.Green,
                         },
@@ -800,17 +856,17 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this, playerTexture, capability1, player1, state1, 50, 8){
+                        new Player(this, playerTexture, capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200),
                             playerColor = Color.Blue,
                         },
                         // Player 2
-                        new Player(this, playerTexture, capability2, player2, state2, 50, 8){
+                        new Player(this, playerTexture, capability2, playertwo, state2, 50, 8){
                             position = new Vector2(ScreenWidth - 200,200),
                             playerColor = Color.Green,
                         },
                         // Player 3
-                        new Player(this, playerTexture, capability3, player3, state3, 50, 8){
+                        new Player(this, playerTexture, capability3, playerthree, state3, 50, 8){
                             position = new Vector2(200,ScreenHeight - 200),
                             playerColor = Color.Purple,
                         },
@@ -879,9 +935,9 @@ namespace GDAPS2
             // Check the device for Player One
             // If there a controller attached, handle it
             // connect controller then add to capabailities
-            capability1 = GamePad.GetCapabilities(player1);
-            capability2 = GamePad.GetCapabilities(player2);
-            capability3 = GamePad.GetCapabilities(player3);
+            capability1 = GamePad.GetCapabilities(playerone);
+            capability2 = GamePad.GetCapabilities(playertwo);
+            capability3 = GamePad.GetCapabilities(playerthree);
 
             // checking for 3 controllers connected
             if (capability1.IsConnected && capability2.IsConnected && capability3.IsConnected)
@@ -913,7 +969,7 @@ namespace GDAPS2
             // checking for 1 controllers connected
             else if (capability1.IsConnected)
             {
-                state1 = GamePad.GetState(player1);
+                state1 = GamePad.GetState(playerone);
                 capabilities.Add(capability1);      //add each capabilityu added to a list 
                 Gamepads = 1;
                 playerCount = 1;                    //if gamepad capability is connected then gamepad bool is true

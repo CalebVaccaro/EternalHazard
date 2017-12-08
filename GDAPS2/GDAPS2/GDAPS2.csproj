@@ -45,7 +45,6 @@
     <Compile Include="Sprites\Bullet.cs" />
     <Compile Include="Sprites\Enemy.cs" />
     <Compile Include="MainGame.cs" />
-    <Compile Include="GameManager.cs" />
     <Compile Include="Sprites\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

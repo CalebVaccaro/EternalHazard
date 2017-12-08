@@ -13,34 +13,52 @@ namespace GDAPS2
     /// class sprite takes in a vector2,and spriteTexture
     /// Parent Class of Sprite Classes
     /// </summary>
-    public class Sprite : ICloneable
+    public class Sprite
     {
+        // ------ Sprite Attributes ----- //
         
-        //sprite attributes
+        // parent texture2D
         protected Texture2D _texture;
+
+        // parent vector2D position 
         public Vector2 position;
-        public float speed = 5f;
+
+        // parent movement speed
+        public float speed;
+
+        // parent rectangle
         public Rectangle rectangle;
 
-        //attributes for sprite sheet animation
+        // ----- Sprite Animation ----- //
+
+        // frame width
         protected int _frameWidth;
+
+        // count of frames
         protected int _frames;
+
+        // frames counted over time
         public int framesElapsed;
-        public double timePerFrame = 100;
+
+        // time during each frame
+        public double timePerFrame;
+
+        // current frame the sprite is on
         public int currentFrame;
 
-        //inhereited bullet attributes
+        // ----- Bullet Related Attributes ----- //
+
+        // rotation velocity
         protected float _rotation;
-        public float scale = 1;
+
+        // scale of the sprite object
+        public float scale;
+
+        // origin point of object
         public Vector2 origin;
-        public Sprite Parent;
 
-        public bool isRemoved = false;  //check to see if sprite needs to be removed
-
-        //Movment Attibutes for Bullet
-        public Vector2 Direction;
-        public float rotationVelocity = 3f;
-        public float linearVelocity = 10f;
+        // check to see if sprite needs to be removed
+        public bool isRemoved;
 
         //angle float
         public double angle = 0;
@@ -54,21 +72,27 @@ namespace GDAPS2
             }
         }
 
-        public Sprite()
-        {
-            // no parameter constructor
-        }
-
         //constructor with taking in texture
         /// <summary>
         /// This will be overrided to load in the constructor in the class you call it in
         /// </summary>
         /// <param name="texture"></param>
         public Sprite(Texture2D texture, int frameWidth, int frames)
-        {
+        { 
+            speed = 5f;
+
+            timePerFrame = 100;
+
+            scale = 1;
+
+            isRemoved = false;
+
             _texture = texture;
+
             origin = new Vector2(_frameWidth / 2, _texture.Height / 2);
+
             _frameWidth = frameWidth;
+
             _frames = frames;
         }
 
@@ -77,8 +101,6 @@ namespace GDAPS2
         public virtual void Update(GameTime gametime, List<Sprite> sprites)
         {
             
-
-
         }
 
 
@@ -88,10 +110,5 @@ namespace GDAPS2
             spirtebatch.Draw(_texture, position, new Rectangle(currentFrame * _frameWidth, 0, _frameWidth, _texture.Height), Color.White, _rotation, origin, scale, SpriteEffects.None, 0);
         }
 
-        //clone will reference the bullet before it
-        public object Clone()
-        {
-            return this.MemberwiseClone();
-        }
     }
 }

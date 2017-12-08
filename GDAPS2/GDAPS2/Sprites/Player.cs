@@ -15,9 +15,16 @@ namespace GDAPS2
     public class Player : Sprite
     {
         //Attributes
+        // checks when player is dead
         private bool hasDied = false;
+
+        // bool to check if the player game is over
         private bool gameover = false;
+
+        // each player has a color if in multiplayer mode
         public Color playerColor;
+
+        // check if the player should switch direction (animation)
         public bool facingSwitch;
 
         // int to determine when player died
@@ -83,13 +90,22 @@ namespace GDAPS2
             
         }
 
-        //Keyboard Overwriiten Player Constructor
+        /// <summary>
+        /// Keyboard Overwriiten Player Constructor
+        /// </summary>
+        /// <param name="texture"></param>
+        /// <param name="frameWidth"></param>
+        /// <param name="frames"></param>
         public Player(Texture2D texture, int frameWidth, int frames) : base(texture, frameWidth, frames)
         {
             scale = .75f;
         }
 
-        //override void 
+        /// <summary>
+        /// override void
+        /// </summary>
+        /// <param name="gametime"></param>
+        /// <param name="sprites"></param>
         public override void Update(GameTime gametime, List<Sprite> sprites)
         {
             //Calling the Move Method
@@ -113,10 +129,10 @@ namespace GDAPS2
                 if (sprite == this || sprite == player) //if connects with player or itself then do nothing
                     continue;
 
-                //Intersetc Method
-                //HasDied  = true
+                // if the another sprites rectangle intersects with players rectangle
                 if (sprite._Rectangle.Intersects(_Rectangle))
                 {
+                    //HasDied  = true
                     this.hasDied = true;
                     gameover = true;
                 }
@@ -135,7 +151,10 @@ namespace GDAPS2
             }
         }
 
-        //Overwrite sprite draw method to utilize player state sprite effects
+        /// <summary>
+        /// Overwrite sprite draw method to utilize player state sprite effects
+        /// </summary>
+        /// <param name="spirtebatch"></param>
         public override void Draw(SpriteBatch spirtebatch)
         {
             switch (playerFacing)
@@ -172,7 +191,6 @@ namespace GDAPS2
                 if (capability.HasLeftXThumbStick)
                {
                     // Check teh direction in X axis of left analog stick
-
                     if(state.ThumbSticks.Left.Length() > 0.1f)
                     {
                         position.X += state.ThumbSticks.Left.X * speed;
@@ -183,7 +201,10 @@ namespace GDAPS2
             }
         }
 
-        //KeyBoard State Move
+
+        /// <summary>
+        /// KeyBoard State Movement Controls
+        /// </summary>
         public void KeyboardMove()
         {
             //move left

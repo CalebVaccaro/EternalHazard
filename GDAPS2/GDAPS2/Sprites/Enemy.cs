@@ -86,8 +86,7 @@ namespace GDAPS2
         {
             // increment bullet pattern +1
             bulletPattern++;
-            bullet.CyclonePattern(sprites, this.position);
-            /*
+
             //if bulletPattern is greater than 0
             if (bulletPattern <= 25)
             {
@@ -113,7 +112,6 @@ namespace GDAPS2
             {
                 ResetTimer();
             }
-            */
         }
 
         
