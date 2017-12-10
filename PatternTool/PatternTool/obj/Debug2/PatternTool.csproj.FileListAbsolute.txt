@@ -1,0 +1,35 @@
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\MonoGame.Framework.dll.config
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\Content\bullet.xnb
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\Content\Normal.xnb
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x86\SDL2.dll
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x64\SDL2.dll
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x86\soft_oal.dll
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x64\soft_oal.dll
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x86\libSDL2-2.0.so.0
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x64\libSDL2-2.0.so.0
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x86\libopenal.so.1
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\x64\libopenal.so.1
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\libSDL2-2.0.0.dylib
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\libopenal.1.dylib
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\PatternTool.exe
+D:\School shit\igme106\PatternTool\PatternTool\bin\Debug2\MonoGame.Framework.dll
+D:\School shit\igme106\PatternTool\PatternTool\obj\Debug2\PatternTool.csproj.CoreCompileInputs.cache
+D:\School shit\igme106\PatternTool\PatternTool\obj\Debug2\PatternTool.exe
+D:\School shit\igme106\PatternTool\PatternTool\obj\Debug2\PatternTool.csprojResolveAssemblyReference.cache
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x86\SDL2.dll
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x64\SDL2.dll
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x86\soft_oal.dll
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x64\soft_oal.dll
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x86\libSDL2-2.0.so.0
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x64\libSDL2-2.0.so.0
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x86\libopenal.so.1
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\x64\libopenal.so.1
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\libSDL2-2.0.0.dylib
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\libopenal.1.dylib
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\MonoGame.Framework.dll.config
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\Content\bullet.xnb
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\Content\Normal.xnb
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\PatternTool.exe
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\bin\Debug2\MonoGame.Framework.dll
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\obj\Debug2\PatternTool.csprojResolveAssemblyReference.cache
+D:\Profiles\mxk6007\Downloads\PatternTool\PatternTool\obj\Debug2\PatternTool.exe
