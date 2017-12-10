@@ -79,6 +79,9 @@
     </Content>
     <Content Include="Content\hazard.png" />
     <Content Include="Content\menu.png" />
+    <Content Include="Content\menuKey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\pause.png" />
     <Content Include="Content\player1.png" />
     <Content Include="Content\playerMonk.png" />

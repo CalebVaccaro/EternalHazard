@@ -69,27 +69,32 @@ namespace GDAPS2
         // Rectangle for all Background Vectors
         private Rectangle mainFrame;
 
-        //Texture2Ds for Loading Backgroun/Menu Images
-        Texture2D menu;
+        //Texture2Ds for Loading Backgroun/Menu Images      
         Texture2D dojo;
         Texture2D gameover;
         Texture2D playerTexture;
         Texture2D enemyTexture;
-        public Texture2D bulletTexture;
-        Texture2D splash;
-        Texture2D tree;
-        Texture2D eternal;
-        Texture2D hazard;
+        public Texture2D bulletTexture;       
         Texture2D splashScreen;
         Texture2D gameoverKey;
-
-        //coordinates for animated states
-        Vector2 splashBgCoords;
-        Vector2 treeCoords;
-        Vector2 eternalCoords;
-        Vector2 hazardCoords;
-        Vector2 menuCoords;
         Vector2 gameoverCoords;
+
+        //Intro Animation Attributes
+        private Texture2D menuPad;
+        private Texture2D menuKey;
+        private Texture2D splash;
+        private Texture2D tree;
+        private Texture2D eternal;
+        private Texture2D hazard;
+        private Vector2 splashBgCoords;
+        private Vector2 treeCoords;
+        private Vector2 eternalCoords;
+        private Vector2 hazardCoords;
+        private Vector2 menuCoords;
+        private int bgTarget;
+        private int treeTarget;
+        private float menuOpacity;
+
 
         #endregion
 
@@ -146,26 +151,21 @@ namespace GDAPS2
             Content.RootDirectory = "Content";
 
             //Preferred Dimensions of the Screen
-            ScreenWidth = graphics.PreferredBackBufferWidth = 1280;
-            ScreenHeight = graphics.PreferredBackBufferHeight = 720;
+            ScreenWidth = graphics.PreferredBackBufferWidth = 1920;
+            ScreenHeight = graphics.PreferredBackBufferHeight = 1080;
             
             graphics.IsFullScreen = false;   // make window fullscreen
             graphics.ApplyChanges();         // apply changes
 
-            //initial animated object locations
+            //Initialize Intro Animation Attributes
             splashBgCoords = new Vector2(0, 0);
-
-            // Tree Position Position
-            treeCoords = new Vector2(1920, 0);
-
-            // Eternal Hazard Title Position
+            bgTarget = -100;
+            treeCoords = new Vector2(2750, 0);
+            treeTarget = -200;
             eternalCoords = new Vector2(550, 350);
-
-            // Hazard Title Coordinates
             hazardCoords = new Vector2(475, 525);
-
-            // Menu Screen Coordinates
             menuCoords = new Vector2(840, 765);
+            menuOpacity = 0.0f;
 
             // Game OVer Screen Text Coordinates
             gameoverCoords = new Vector2(500, 200);
@@ -224,12 +224,13 @@ namespace GDAPS2
             //creating each var Texture for each asset needed to be put into the game         
             playerTexture = Content.Load<Texture2D>("player1");            // monk texture
             enemyTexture = Content.Load<Texture2D>("enemy");               // enemy texture
-            bulletTexture = Content.Load<Texture2D>("cyclonebullet");        // bullet texture
+            bulletTexture = Content.Load<Texture2D>("cyclonebullet");      // bullet texture
             splash = Content.Load<Texture2D>("splashBackground");          // menu texture 
             tree = Content.Load<Texture2D>("tree");                        // tree texture
             eternal = Content.Load<Texture2D>("eternal");                  // Eternal Hazard Title texture
             hazard = Content.Load<Texture2D>("hazard");                    // Hazard Title Texture
-            menu = Content.Load<Texture2D>("menu");                        // Control Text Texture
+            menuPad = Content.Load<Texture2D>("menu");                     // Controller Menu
+            menuKey = Content.Load<Texture2D>("menuKey");                  // Keyboard Menu
             dojo = Content.Load<Texture2D>("dojoBG");                      // dojo background texture
             gameover = Content.Load<Texture2D>("gameOver");                // gameover text texture
             font = Content.Load<SpriteFont>("Score");                      // Font Score texture
@@ -272,16 +273,16 @@ namespace GDAPS2
                     //Load Content
                     LoadContent();
 
-                    // BACKGROUND IMAGE
-                    if (splashBgCoords.X > -100)
-                    {
-                        splashBgCoords = new Vector2(splashBgCoords.X - 1, splashBgCoords.Y);
-                    }
+                    //ease background image
+                    splashBgCoords.X -= (splashBgCoords.X - bgTarget) * 0.007f;
 
-                    // Foreground Tree
-                    if (treeCoords.X > -200)
+                    //ease tree image
+                    treeCoords.X -= (treeCoords.X - treeTarget) * 0.015f;
+
+                    //menu fades in
+                    if(treeCoords.X < -75)
                     {
-                        treeCoords = new Vector2(treeCoords.X - 20, treeCoords.Y);
+                        menuOpacity += 0.03f;
                     }
 
                     // GAMEPAD STATE: KEY(0)
@@ -617,11 +618,16 @@ namespace GDAPS2
                         spriteBatch.Draw(splash, splashBgCoords, Color.White);
                         spriteBatch.Draw(tree, treeCoords, Color.White);
                         if (treeCoords.X < 0)
+                        {
                             spriteBatch.Draw(eternal, eternalCoords, Color.White);
-                        if (treeCoords.X < -100)
+                        }
+
+                        if (treeCoords.X < -30)
+                        {
                             spriteBatch.Draw(hazard, hazardCoords, Color.White);
-                        if (treeCoords.X < -180)
-                            spriteBatch.Draw(menu, menuCoords, Color.White);
+                        }
+
+                        spriteBatch.Draw(menuPad, menuCoords, Color.White * menuOpacity);
                     }
 
                     //display menu image
@@ -632,11 +638,16 @@ namespace GDAPS2
                         spriteBatch.Draw(splash, splashBgCoords, Color.White);
                         spriteBatch.Draw(tree, treeCoords, Color.White);
                         if (treeCoords.X < 0)
+                        {
                             spriteBatch.Draw(eternal, eternalCoords, Color.White);
-                        if (treeCoords.X < -100)
+                        }
+                            
+                        if (treeCoords.X < -30)
+                        {
                             spriteBatch.Draw(hazard, hazardCoords, Color.White);
-                        if (treeCoords.X < -180)
-                            spriteBatch.Draw(menu, menuCoords, Color.White);
+                        }
+                                                  
+                        spriteBatch.Draw(menuKey, menuCoords, Color.White * menuOpacity);
 
                         //spriteBatch.Draw(splashScreen, mainFrame, Color.White);
                         spriteBatch.DrawString(font, "Controllers Are Recommended for this Game", new Vector2(ScreenWidth - 350, ScreenHeight - 150), Color.White);
