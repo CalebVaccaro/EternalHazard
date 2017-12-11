@@ -67,6 +67,12 @@
     <Content Include="Content\bulletSheet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\confirmKey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\confirmPad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\dojoBG.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

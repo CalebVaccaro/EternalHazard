@@ -80,6 +80,8 @@ namespace GDAPS2
         //Intro Animation and Main Menu Attributes
         private Texture2D menuPad;
         private Texture2D menuKey;
+        private Texture2D confirmPad;
+        private Texture2D confirmKey;
         private Texture2D splash;
         private Texture2D tree;
         private Texture2D eternal;
@@ -92,6 +94,8 @@ namespace GDAPS2
         private int bgTarget;
         private int treeTarget;
         private float menuOpacity;
+        private float confirmOpacity;
+        private bool confirmFlag;
 
         //Player Textures
         private Texture2D playerOneTexture;
@@ -109,7 +113,7 @@ namespace GDAPS2
 
         #endregion
 
-        #region Capabilities
+    #region Capabilities
 
         //Controller Attributes
         private List<GamePadCapabilities> capabilities = new List<GamePadCapabilities>(); //creates a list of capabilities
@@ -177,6 +181,8 @@ namespace GDAPS2
             hazardCoords = new Vector2(475, 525);
             menuCoords = new Vector2(840, 765);
             menuOpacity = 0.0f;
+            confirmOpacity = 0.0f;
+            confirmFlag = false;
 
             // Game OVer Screen Text Coordinates
             gameoverCoords = new Vector2(500, 200);
@@ -247,6 +253,8 @@ namespace GDAPS2
             hazard = Content.Load<Texture2D>("hazard");                    // Hazard Title Texture
             menuPad = Content.Load<Texture2D>("menu");                     // Controller Menu
             menuKey = Content.Load<Texture2D>("menuKey");                  // Keyboard Menu
+            confirmPad = Content.Load<Texture2D>("confirmPad");            // Controller Exit confirmation
+            confirmKey = Content.Load<Texture2D>("confirmKey");            // Keyboard Exit confirmation
             ruins = Content.Load<Texture2D>("ruinsBG");                    // level 1 background texture
             dojo = Content.Load<Texture2D>("dojoBG");                      // level 2 background texture
             astral = Content.Load<Texture2D>("astralBG");                  // level 3 background texture
@@ -307,20 +315,45 @@ namespace GDAPS2
                     // GAMEPAD STATE: KEY(0)
                     if (Gamepads == 0)
                     {
-                        // You can also check the controllers "type"
+                        // User presses enter
                         if (Keyboard.GetState().IsKeyDown(Keys.Enter) && !previousState.IsKeyDown(Keys.Enter))
                         {
-                            // the button has just been pressed
-                            // do something here
+                            // start new game
                             NewGame();
                         }
 
-                        // You can also check the controllers "type"
-                        if (Keyboard.GetState().IsKeyDown(Keys.Escape) && !previousState.IsKeyDown(Keys.Escape))
+                        // User presses escape
+                        if (Keyboard.GetState().IsKeyDown(Keys.Escape) && !previousState.IsKeyDown(Keys.Escape) || confirmFlag == true)
                         {
-                            // the button has just been pressed
-                            // do something here
-                            this.Exit();
+                            //flag confirmation state
+                            confirmFlag = true;
+
+                            //fade out menu
+                            menuOpacity = 0f;
+
+                            //fade in exit confirmation
+                            confirmOpacity = 1f;
+
+                            // If user confirms exit
+                            if (Keyboard.GetState().IsKeyDown(Keys.Y) && !previousState.IsKeyDown(Keys.Y))
+                            {
+                                //exit the game
+                                this.Exit();
+                            }
+
+                            // If user decides to continue
+                            if (Keyboard.GetState().IsKeyDown(Keys.N) && !previousState.IsKeyDown(Keys.N))
+                            {
+                                //fade out menu
+                                menuOpacity = 1f;
+
+                                //fade in exit confirmation
+                                confirmOpacity = 0f;
+
+                                //reset to default menu
+                                confirmFlag = false;
+                            }
+                            
                         }
 
                         // save keystate to previous keystate
@@ -338,20 +371,44 @@ namespace GDAPS2
 
                         if (controllerC.GamePadType == GamePadType.GamePad)
                         {
-                            // You can also check the controllers "type"
+                            // Player one presses start
                             if (state1.IsButtonDown(Buttons.Start) && !previousState1.IsButtonDown(Buttons.Start))
                             {
-                                // the button has just been pressed
-                                // do something here
+                                // start new game
                                 NewGame();
                             }
 
-                            // You can also check the controllers "type"
-                            if (state1.IsButtonDown(Buttons.Y))
+                            // Player one presses Y to exit
+                            if (state1.IsButtonDown(Buttons.Y) && !previousState1.IsButtonDown(Buttons.Y) || confirmFlag == true)
                             {
-                                // the button has just been pressed
-                                // do something here
-                                this.Exit();
+                                //flag confirmation state
+                                confirmFlag = true;
+
+                                //fade out menu
+                                menuOpacity = 0f;
+
+                                //fade in exit confirmation
+                                confirmOpacity = 1f;
+
+                                // If user confirms exit
+                                if (state1.IsButtonDown(Buttons.A) && !previousState1.IsButtonDown(Buttons.A))
+                                {
+                                    //exit the game
+                                    this.Exit();
+                                }
+
+                                // If user decides to continue
+                                if (state1.IsButtonDown(Buttons.B) && !previousState1.IsButtonDown(Buttons.B))
+                                {
+                                    //fade out menu
+                                    menuOpacity = 1f;
+
+                                    //fade in exit confirmation
+                                    confirmOpacity = 0f;
+
+                                    //reset to default menu
+                                    confirmFlag = false;
+                                }
                             }
                         }
 
@@ -444,7 +501,7 @@ namespace GDAPS2
 
                     }
 
-                    // GAMEPAD STATE: 3
+                    // GAMEPAD STATE: 4
                     //if gamepad true, controllers are connected
                     if (Gamepads == 4)
                     {
@@ -647,6 +704,7 @@ namespace GDAPS2
                         }
 
                         spriteBatch.Draw(menuPad, menuCoords, Color.White * menuOpacity);
+                        spriteBatch.Draw(confirmPad, menuCoords, Color.White * confirmOpacity);
                     }
 
                     //display menu image
@@ -667,9 +725,10 @@ namespace GDAPS2
                         }
                                                   
                         spriteBatch.Draw(menuKey, menuCoords, Color.White * menuOpacity);
+                        spriteBatch.Draw(confirmKey, menuCoords, Color.White * confirmOpacity);
 
                         //spriteBatch.Draw(splashScreen, mainFrame, Color.White);
-                        spriteBatch.DrawString(font, "Controllers Are Recommended for this Game", new Vector2(ScreenWidth - 350, ScreenHeight - 150), Color.White);
+                        spriteBatch.DrawString(font, "Controllers Are Recommended for this Game", new Vector2(50, 25), Color.White);
                     }
                     
                     break;

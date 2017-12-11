@@ -806,3 +806,7 @@ C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard
 C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\tree.png
 C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pauseKey.xnb
 C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\pauseKey.png
+C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\confirmKey.xnb
+C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\confirmKey.png
+C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\confirmPad.xnb
+C:\Users\tucke\Dropbox\RIT\Game Dev & Alg\Group Project\Repository\EternalHazard\GDAPS2\GDAPS2\bin\Windows\x86\Debug\Content\confirmPad.png
