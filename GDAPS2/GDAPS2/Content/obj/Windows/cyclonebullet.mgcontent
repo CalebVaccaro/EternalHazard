@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/cyclonebullet.png</SourceFile>
-  <SourceTime>2017-12-10T13:41:52.1245905-05:00</SourceTime>
-  <DestFile>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/bin/Windows/cyclonebullet.xnb</DestFile>
-  <DestTime>2017-12-10T13:53:16.3456871-05:00</DestTime>
+  <SourceFile>C:/Users/vacca/Documents/EternalHazard/GDAPS2/GDAPS2/Content/cyclonebullet.png</SourceFile>
+  <SourceTime>2017-12-10T20:20:55.1344235-05:00</SourceTime>
+  <DestFile>C:/Users/vacca/Documents/EternalHazard/GDAPS2/GDAPS2/Content/bin/Windows/cyclonebullet.xnb</DestFile>
+  <DestTime>2017-12-10T20:48:55.4472873-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T10:05:36-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -31,13 +31,24 @@ namespace GDAPS2
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        // --- Object Called Attributes ---- //
+
+        // Map Data Object
+        MapData data = new MapData();
+
         // ---- Player/Sprite Attributes  ---- //
 
         // Creating Sprite List
-        private List<Sprite> _sprites;  
+        private List<Sprite> _sprites;
 
-        // int for counting score(placeholder)
-        private int score = 0;
+        // Add Player list
+        private List<Player> _players;
+
+        // Add Player list
+        private List<Enemy> _enemies;
+
+        // Add Player list
+        private List<Bullet> _bullets;
 
         // how many players in game
         int playerCount;
@@ -59,6 +70,12 @@ namespace GDAPS2
         // countdown timer for when to start enemy shooting
         public int countdownTimer;
 
+        // count the seconds 
+        public int seconds;
+
+        // count minutes
+        public int minutes;
+
         // ScreenHeight and Width Attributes
         public int ScreenWidth;
         public int ScreenHeight;
@@ -74,6 +91,7 @@ namespace GDAPS2
         Texture2D gameover;
         Texture2D playerTexture;
         Texture2D enemyTexture;
+        Texture2D resultsrect;
         public Texture2D bulletTexture;       
         Texture2D splashScreen;
         Texture2D gameoverKey;
@@ -170,6 +188,14 @@ namespace GDAPS2
             // Game OVer Screen Text Coordinates
             gameoverCoords = new Vector2(500, 200);
 
+
+            _players = new List<Player>();
+
+            // instantiate players list
+            _enemies = new List<Enemy>();
+
+            // instantiate players list
+            _bullets = new List<Bullet>();
         }
 
         /// <summary>
@@ -193,7 +219,7 @@ namespace GDAPS2
             capability4 = GamePad.GetCapabilities(playerfour);
 
             // CountDown Timer 
-            countdownTimer = 200;
+            countdownTimer = 5;
 
             //check controllers
             CheckControllers();
@@ -236,6 +262,7 @@ namespace GDAPS2
             font = Content.Load<SpriteFont>("Score");                      // Font Score texture
             splashScreen = Content.Load<Texture2D>("splashscreen");        // Spalsh Screen Texture
             gameoverKey = Content.Load<Texture2D>("gameOverKey");          // Game Over Keyboard Texture
+            resultsrect = Content.Load<Texture2D>("resultsrect");          // results rectangle texture
 
             //Background Rectangle
             mainFrame = new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);   
@@ -263,10 +290,13 @@ namespace GDAPS2
             //check controllers
             CheckControllers();
 
+            // Read in Map Text
+            data.TextReader();
+
             //SWTICH STATEMENT
             switch (state)
             {
-
+                
                 // --------- MENU STATE ----------- //
                 case GameState.Menu:
 
@@ -491,6 +521,9 @@ namespace GDAPS2
 
                         //Has Died Method is Called
                         HasDied();
+
+                        // check if player won
+                        Won();
                     }
 
                     // KeyState for Game
@@ -509,6 +542,9 @@ namespace GDAPS2
 
                         //Has Died Method is Called
                         HasDied();
+
+                        // check if player won
+                        Won();
                     }
 
                     // save keystate to previous keystated
@@ -667,30 +703,40 @@ namespace GDAPS2
                         sprite.Draw(spriteBatch);
                     }
 
-                    //Text On Screen
-                    spriteBatch.DrawString(font, "CountDown: " + countdownTimer.ToString(), new Vector2(ScreenWidth / 2, 10), Color.Red);
-                    spriteBatch.DrawString(font, "Time: " + timer.ToString(), new Vector2(ScreenWidth / 2, 50), Color.Black);
 
-                    // GAMEPADS: 3
-                    if (Gamepads == 3)
+
+                    //Text On Screen
+                    spriteBatch.DrawString(font, "CountDown: " + countdownTimer.ToString(), new Vector2(ScreenWidth / 2 - 52, 25), Color.Red);
+                    // spriteBatch.DrawString(font, "Time: " + timer.ToString(), new Vector2(ScreenWidth / 2, 50), Color.Black);
+                    spriteBatch.DrawString(font, "Time: " + minutes.ToString() + " : " + seconds.ToString(), new Vector2(ScreenWidth / 2 - 45, 60), Color.Black);
+
+
+                    // GAMEPADS: 1 or KEYSTATE(SinglePlayer)
+                    if (Gamepads < 2)
                     {
-                        spriteBatch.DrawString(font, "Player 1 Score: " + score.ToString(), new Vector2(60, 20), Color.Blue);
-                        spriteBatch.DrawString(font, "Player 2 Score: " + score.ToString(), new Vector2(ScreenWidth - 200, 20), Color.Green);
-                        spriteBatch.DrawString(font, "Player 3 Score: " + score.ToString(), new Vector2(60, ScreenHeight - 50), Color.Purple);
+                        spriteBatch.DrawString(font, "Score: " + _players[0].Score.ToString(), new Vector2(60, 20), Color.Blue);
                     }
                     // GAMEPADS: 2
                     if (Gamepads == 2)
                     {
-                        spriteBatch.DrawString(font, "Player 1 Score: " + score.ToString(), new Vector2(60, 20), Color.Blue);
-                        spriteBatch.DrawString(font, "Player 2 Score: " + score.ToString(), new Vector2(ScreenWidth - 200, 20), Color.Green);
+                        spriteBatch.DrawString(font, "Player 1 Score: " + _players[0].Score.ToString(), new Vector2(60, 20), Color.Blue);
+                        spriteBatch.DrawString(font, "Player 2 Score: " + _players[1].Score.ToString(), new Vector2(ScreenWidth - 200, 20), Color.Green);
                     }
-                    // GAMEPADS: 1 or KEYSTATE(SinglePlayer)
-                    if (Gamepads < 2)
+                    // GAMEPADS: 3
+                    if (Gamepads == 3)
                     {
-                        spriteBatch.DrawString(font, "Score: " + score.ToString(), new Vector2(60, 20), Color.Blue);
+                        spriteBatch.DrawString(font, "Player 1 Score: " + _players[0].Score.ToString(), new Vector2(60, 20), Color.Blue);
+                        spriteBatch.DrawString(font, "Player 2 Score: " + _players[1].Score.ToString(), new Vector2(ScreenWidth - 200, 20), Color.Green);
+                        spriteBatch.DrawString(font, "Player 3 Score: " + _players[2].Score.ToString(), new Vector2(60, ScreenHeight - 50), Color.Purple);
                     }
-
-                    
+                    // GAMEPADS: 4
+                    if (Gamepads == 4)
+                    {
+                        spriteBatch.DrawString(font, "Player 1 Score: " + _players[0].Score.ToString(), new Vector2(60, 20), Color.Blue);
+                        spriteBatch.DrawString(font, "Player 2 Score: " + _players[1].Score.ToString(), new Vector2(ScreenWidth - 200, 20), Color.Green);
+                        spriteBatch.DrawString(font, "Player 3 Score: " + _players[2].Score.ToString(), new Vector2(60, ScreenHeight - 50), Color.Purple);
+                        spriteBatch.DrawString(font, "Player 4 Score: " + _players[3].Score.ToString(), new Vector2(ScreenWidth - 200, ScreenHeight - 50), Color.Orange);
+                    }
 
                     break;
 
@@ -751,7 +797,9 @@ namespace GDAPS2
                         playerCount -= 1;
 
                         // get death time
-                        player.DeathTime = (int)timer;
+                        player.DeathTimeSec = (int)seconds;
+
+                        player.DeathTimeMin = (int)minutes;
                     }
                 }
 
@@ -763,6 +811,28 @@ namespace GDAPS2
                 state = GameState.GameOver;
             }
 
+        }
+
+        /// <summary>
+        /// Check all players if they won by surviving for a time limit
+        /// Add Score too
+        /// </summary>
+        public void Won()
+        {
+            // FORLOOP for allowing Enemies to Shoot
+            //cycle through list of sprites
+            foreach (var player in _players)
+            {
+ 
+                if (player.HasDied == false && minutes == 2)
+                {
+                    // add 100 to player score
+                    player.Score = player.Score + 100;
+
+                    // go to next state
+                    state = GameState.GameOver;
+                }
+            }
         }
 
         /// <summary>
@@ -786,7 +856,7 @@ namespace GDAPS2
                     _sprites = new List<Sprite>
                     {
                         // Player 1
-                        new Player(this,playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this,playerTexture, "Player 1", capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200)
                         },
 
@@ -810,7 +880,7 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this,playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this,playerTexture,"Player 1", capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200),
                             playerColor = Color.Blue,
                         },
@@ -836,12 +906,12 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this, playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this, playerTexture, "Player 1",capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200),
                             playerColor = Color.Blue,
                         },
                         // Player 2
-                        new Player(this, playerTexture, capability2, playertwo, state2, 50, 8){
+                        new Player(this, playerTexture, "Player 2",capability2, playertwo, state2, 50, 8){
                             position = new Vector2(ScreenWidth - 200,200),
                             playerColor = Color.Green,
                         },
@@ -867,17 +937,17 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this, playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this, playerTexture,"Player 1", capability1, playerone, state1, 50, 8){
                             position = new Vector2(200,200),
                             playerColor = Color.Blue,
                         },
                         // Player 2
-                        new Player(this, playerTexture, capability2, playertwo, state2, 50, 8){
+                        new Player(this, playerTexture, "Player 2",capability2, playertwo, state2, 50, 8){
                             position = new Vector2(ScreenWidth - 200,200),
                             playerColor = Color.Green,
                         },
                         // Player 3
-                        new Player(this, playerTexture, capability3, playerthree, state3, 50, 8){
+                        new Player(this, playerTexture,"Player 3", capability3, playerthree, state3, 50, 8){
                             position = new Vector2(200,ScreenHeight - 200),
                             playerColor = Color.Purple,
                         },
@@ -894,9 +964,85 @@ namespace GDAPS2
 
                     break;
 
+                // GamePadeState: 4
+                case 4:
 
+                    // Instantiate Sprite List
+                    _sprites = new List<Sprite>
+                    {
+                        // Add Players to Sprite List
+
+                        // Player 1
+                        new Player(this, playerTexture,"Player 1", capability1, playerone, state1, 20, 1){
+                            position = new Vector2(200,200),
+                            playerColor = Color.Blue,
+                        },
+                        // Player 2
+                        new Player(this, playerTexture,"Player 2", capability2, playertwo, state2, 20, 1){
+                            position = new Vector2(ScreenWidth - 200,200),
+                            playerColor = Color.Green,
+                        },
+                        // Player 3
+                        new Player(this, playerTexture,"Player 3", capability3, playerthree, state3, 20, 1){
+                            position = new Vector2(200,ScreenHeight - 200),
+                            playerColor = Color.Purple,
+                        },
+                        // Player 3
+                        new Player(this, playerTexture,"Player 4", capability4, playerfour, state4, 20, 1){
+                            position = new Vector2(ScreenWidth - 200,ScreenHeight - 200),
+                            playerColor = Color.Orange,
+                        },
+
+                        // Add Enemy to the Sprite List
+                        new Enemy(this, enemyTexture, 400, 1){
+                            //Set position to the Middle of Screen
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 ,graphics.GraphicsDevice.Viewport.Height / 2)
+                        },
+
+                        // Add Bulet Object to the Sprite List
+                        new Bullet(this, bulletTexture,20, 1)
+                    };
+
+                    break;
             }
 
+            // check all the sprites in the list
+            for (int i = 0; i < 1; i++)
+            {
+                //store currently indexed sprite
+                Sprite sprite = _sprites[i];
+
+                //if current sprite is enemy
+                if (sprite is Enemy)
+                {
+                    //create enemy object, if sprite is an Enemy
+                    Enemy enemy = sprite as Enemy;
+
+                    // add player to the list
+                    _enemies.Add(enemy);
+
+                    return;
+                }
+            }
+
+            // check all the sprites in the list
+            for (int i = 0; i < 5; i++)
+            {
+                //store currently indexed sprite
+                Sprite sprite = _sprites[i];
+
+                //if current sprite is enemy
+                if (sprite is Player)
+                {
+                    //create enemy object, if sprite is an Enemy
+                    Player player = sprite as Player;
+
+                    // add player to the list
+                    _players.Add(player);
+
+                    return;
+                }
+            }
         }
 
         /// <summary>
@@ -910,6 +1056,31 @@ namespace GDAPS2
             {
                 // Increment timer +1
                 timer++;
+
+                // check if timer hits a second
+                // 100 miliseconds =  1 second
+                int secondcounter = 100;
+
+                // if timer in miliseconds = second counter
+                if (timer == secondcounter)
+                {
+                    // increment a second + 1
+                    seconds++;
+
+                    //reset timer
+                    timer = 0;
+
+                }
+
+                // check if time hit a minute
+                if (seconds >= 60)
+                {
+                    // increment minutes +1
+                    minutes++;
+
+                    //reset seconds
+                    seconds = 0;
+                }
 
                 //cycle through list of sprites
                 for (int i = 0; i < _sprites.Count; i++)
@@ -932,8 +1103,26 @@ namespace GDAPS2
                
             }
 
-            //normal condition, decrement counter -1
-            countdownTimer--;
+            else if (countdownTimer > 0)
+            {
+                // increment timer
+                timer++;
+                // count up will count up to a certain number and then increment the countdowntimer - 1
+                float countupcounter = timer;
+
+                // check if timer hits a second
+                // 100 miliseconds =  1 second
+                if (countupcounter == 100)
+                {
+                    // reset timer
+                    timer = 0;
+
+                    //normal condition, decrement counter -1
+                    countdownTimer--;
+                }
+
+
+            }
 
         }
 
@@ -1017,34 +1206,65 @@ namespace GDAPS2
             // if still false return false
             return keyboardState;
         }
-        
+
         /// <summary>
         /// At the end of the game results for the game will be shown
         /// Results to be Shown: Surviving Players, How Long Each Player Survived
         /// </summary>
         public void Results()
         {
-            //loop through list of sprites
-            for (int i = 0; i < _sprites.Count; i++)
-            {
-                //store currently indexed sprite
-                Sprite sprite = _sprites[i];
+            // draw rect around results
+            spriteBatch.Draw(resultsrect, new Vector2(ScreenWidth / 2 - 160, ScreenHeight / 2 + 25), Color.White);
+            // Print Text: Results
+            spriteBatch.DrawString(font, "Results ", new Vector2(ScreenWidth / 2 - 37, ScreenHeight / 2 + 37), Color.White);
 
-                //if current sprite is enemy
+            // int position x for printing players stats
+            int playerpoxX = ScreenWidth / 2 - 145;
+
+            // int position y for printing players stats
+            int playerpoxY = ScreenHeight / 2 + 89;
+
+            // int position x for printing players stats
+            int resultboxX = ScreenWidth / 2 - 160;
+
+            // int position y for printing players stats
+            int resultboxY = ScreenHeight / 2 + 25;
+
+            // check through all sprites
+            foreach (Sprite sprite in _sprites)
+            {
+                // check through to see if a sprite is a player
                 if (sprite is Player)
                 {
-                    //create player object, if sprite is an Player
                     Player player = sprite as Player;
 
+                    // temp list for players
+                    List<Player> _players = new List<Player>();
+
+                    // add players to list
+                    _players.Add(player);
+
                     // check if player has not died yet
-                    if (player.HasDied == false)
+                    foreach (var players in _players)
                     {
-                        spriteBatch.DrawString(font, "Player has survived: Player " + player.PlayerIndex, player.position, Color.White);
+                        // if player has not died
+                        if (player.HasDied == false)
+                        {
+                            spriteBatch.Draw(resultsrect, new Vector2(resultboxX, resultboxY + 50), Color.White);
+                            spriteBatch.DrawString(font, player.Name + " has Survived! " + " Score: " + player.Score, new Vector2(playerpoxX + 10, playerpoxY), Color.LightGreen);
+
+                        }
+                        // else print their death time
+                        else
+                        {
+                            spriteBatch.Draw(resultsrect, new Vector2(resultboxX, resultboxY + 50), Color.White);
+                            spriteBatch.DrawString(font, player.Name + " Time Lasted: " + player.DeathTimeMin + " : " + player.DeathTimeSec + " Score: " + player.Score, new Vector2(playerpoxX, playerpoxY), Color.Red);
+                        }
                     }
-                    else
-                    {
-                        spriteBatch.DrawString(font, player.PlayerIndex + ": has not survived  Time Lasted To: " + player.DeathTime, player.position, Color.White);
-                    }
+
+                    // increment player text positions foreach player
+                    resultboxY = resultboxY + 75;
+                    playerpoxY = playerpoxY + 50;
                 }
             }
         }
@@ -1058,7 +1278,60 @@ namespace GDAPS2
             //reset timer
             timer = 0;
             // countdown timer
-            countdownTimer = 200;
+            countdownTimer = 3;
+        }
+
+        /// <summary>
+        /// Set Position Data for Players if File Says So
+        /// Set Boss Position
+        /// </summary>
+        public void SetData()
+        {
+            // Mapa Data Object
+            MapData mD = new MapData();
+
+            // check to make sure its no 0,0 
+            // its hard to do when placing coordinates
+            if (mD.P1.X != 0 && mD.P1.Y != 0)
+            {
+                // first player in list
+                _players[0].position.X = mD.P1.X;
+                _players[0].position.Y = mD.P1.Y;
+            }
+
+            if (mD.P2.X != 0 && mD.P2.Y != 0)
+            {
+                // first player in list
+                _players[1].position.X = mD.P2.X;
+                _players[1].position.Y = mD.P2.Y;
+            }
+
+            if (mD.P3.X != 0 && mD.P3.Y != 0)
+            {
+                // first player in list
+                _players[2].position.X = mD.P3.X;
+                _players[2].position.Y = mD.P3.Y;
+            }
+
+            if (mD.P4.X != 0 && mD.P4.Y != 0)
+            {
+                // first player in list
+                _players[3].position.X = mD.P4.X;
+                _players[3].position.Y = mD.P4.Y;
+            }
+
+
+            // first map
+            if (mD.DomainName != null)
+            {
+                // check if image changed
+                if (mD.BkImage != null)
+                {
+                    // set dojo to new image name
+                    dojo = Content.Load<Texture2D>(mD.DomainName);
+                }
+            }
+            
         }
 
         #endregion

@@ -12,6 +12,9 @@ namespace GDAPS2
         //rotates the shooting vector
         public string angle;
 
+        //rotates the shooting vector
+        public string loopangle;
+
         //conditional to make sure fire rate of projectiles can be controled
         public string rateOfFire;
 
@@ -19,7 +22,20 @@ namespace GDAPS2
         public string rotationalVelocity;
 
         //manipulates velocity of the bullet
-        public string velocity;
+        public string linearvelocity;
+
+        //manipulates rotating velocity
+        //one copy for each of the pattern
+        public string loopRotationalVelocity;
+
+        // loop velocity for certain bullet patterns
+        public string loopVelocity;
+
+        //timer used to keep track of how long a projectile travels backwards for the LoopDLoop pattern
+        public string travelTimer;
+
+        //conditional to make sure fire rate of projectiles can be controled
+        public string loopRateOfFire;
 
         //Need a Dictionary for Game Values
         public List<string> _sections = new List<string>();
@@ -35,7 +51,7 @@ namespace GDAPS2
             angle = null;
             rateOfFire = null;
             rotationalVelocity = null;
-            velocity = null;
+            linearvelocity = null;
         }
 
         //.ini filereader
@@ -62,7 +78,6 @@ namespace GDAPS2
                                 {
                                     _sections.Add(line);
                                 }
-
                                 else if (line.StartsWith(";"))
                                 {
                                     _comments.Add(line);
@@ -93,17 +108,43 @@ namespace GDAPS2
                 Console.WriteLine(ioe.StackTrace);
             }
 
-            // Angle at which the projectile will travel in
-            angle = _gameValues[0];
+            // foreach section
+            foreach (var section in _sections)
+            {
+                if (section.Contains("Spiral"))
+                {
+                    // Angle at which the projectile will travel in
+                    angle = _gameValues[0];
 
-            // Increase in angle at x degrees per second
-            rotationalVelocity = _gameValues[1];
+                    // Increase in angle at x degrees per second
+                    rotationalVelocity = _gameValues[1];
 
-            // Will fire 1 projectile every x amounts of frames
-            rateOfFire = _gameValues[2];
+                    // Will fire 1 projectile every x amounts of frames
+                    rateOfFire = _gameValues[2];
 
-            // Speed of the projectile
-            velocity = _gameValues[3];
+                    // Speed of the projectile
+                    linearvelocity = _gameValues[3];
+                }
+
+                if (section.Contains("LoopDLoop"))
+                {
+                    // Angle at which the projectile will travel in
+                    loopangle = _gameValues[4];
+
+                    // Increase in angle at x degrees per second
+                    loopRotationalVelocity = _gameValues[5];
+
+                    // Will fire 1 projectile every x amounts of frames
+                    loopRateOfFire = _gameValues[6];
+
+                    // Speed of the projectile
+                    loopVelocity = _gameValues[7];
+
+                    // travel time
+                    travelTimer = _gameValues[8];
+
+                }
+            }
         }
     }
 }

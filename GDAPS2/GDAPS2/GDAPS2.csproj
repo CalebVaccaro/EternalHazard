@@ -35,13 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationIcon>monk.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BulletData.cs" />
+    <Compile Include="MapData.cs" />
     <Compile Include="Sprites\Bullet.cs" />
     <Compile Include="Sprites\Enemy.cs" />
     <Compile Include="MainGame.cs" />
@@ -85,10 +86,12 @@
     <Content Include="Content\pause.png" />
     <Content Include="Content\player1.png" />
     <Content Include="Content\playerMonk.png" />
+    <Content Include="Content\resultsrect.png" />
     <Content Include="Content\splashBackground.png" />
     <Content Include="Content\splashScreen.png" />
     <Content Include="Content\tree.png" />
     <Content Include="Icon.ico" />
+    <Content Include="monk.ico" />
   </ItemGroup>
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />

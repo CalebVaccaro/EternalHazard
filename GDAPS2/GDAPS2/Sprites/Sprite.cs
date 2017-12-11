@@ -107,7 +107,7 @@ namespace GDAPS2
         //Parent Method of drawing spirtes, will be use by bullet, enemy, player
         public virtual void Draw(SpriteBatch spirtebatch)
         {
-            spirtebatch.Draw(_texture, position, new Rectangle(currentFrame * _frameWidth, 0, _frameWidth, _texture.Height), Color.White, _rotation, origin, scale, SpriteEffects.None, 0);
+            spirtebatch.Draw(_texture, position, new Rectangle(currentFrame * _frameWidth, 0, _texture.Width, _texture.Height), Color.White, _rotation, origin, scale, SpriteEffects.None, 0);
         }
 
     }

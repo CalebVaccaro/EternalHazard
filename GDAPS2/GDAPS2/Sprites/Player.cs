@@ -15,8 +15,15 @@ namespace GDAPS2
     public class Player : Sprite
     {
         //Attributes
+
+        // main game object
+        MainGame mG;
+
+        // name for each character
+        private string name;
+
         // checks when player is dead
-        private bool hasDied = false;
+        private bool hasDied;
 
         // bool to check if the player game is over
         private bool gameover = false;
@@ -27,22 +34,32 @@ namespace GDAPS2
         // check if the player should switch direction (animation)
         public bool facingSwitch;
 
-        // int to determine when player died
-        private int deathTime;
+        // int to determine when player died Minutes
+        private int deathTimeMin;
+
+        // int to determine when player died Seconds
+        private int deathTimeSec;
 
         // int to count player score
         private int score;
 
-        //Main Game Object
-        MainGame mG;
-
         //Sprite Class Object
-        public Bullet bullet;   
+        public Bullet bullet;
 
-        //Attributes to get the controllers:
-        private GamePadCapabilities capability; //capability 
-        private PlayerIndex playerindex;        //playerIndex
-        private GamePadState state;             //controllerState
+        //capability 
+        private GamePadCapabilities capability;
+
+        //playerIndex
+        private PlayerIndex playerindex;
+
+        //controllerState
+        private GamePadState state;
+
+        //enumeration for image flipping
+        private enum PlayerDirection { MovingLeft, MovingRight };
+        PlayerDirection playerFacing = PlayerDirection.MovingRight;
+
+        #region Properties
 
         public PlayerIndex PlayerIndex
         {
@@ -59,10 +76,16 @@ namespace GDAPS2
             get { return gameover; }
         }
 
-        public int DeathTime
+        public int DeathTimeMin
         {
-            get { return deathTime; }
-            set { deathTime = value; }
+            get { return deathTimeMin; }
+            set { deathTimeMin = value; }
+        }
+
+        public int DeathTimeSec
+        {
+            get { return deathTimeSec; }
+            set { deathTimeSec = value; }
         }
 
         public int Score
@@ -71,23 +94,44 @@ namespace GDAPS2
             set { score = value; }
         }
 
-        //enumeration for image flipping
-        private enum PlayerDirection { MovingLeft, MovingRight };
-        PlayerDirection playerFacing = PlayerDirection.MovingRight;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        #endregion
 
         //create a new constructor for Player from Sprite
         //Instantiate Movement and First position
         //since we only need to do this to get our Update method and attributes from Sprite
-        public Player(MainGame mg, Texture2D texture, GamePadCapabilities capability, PlayerIndex pi, GamePadState gpstate, int frameWidth, int frames) : base(texture, frameWidth, frames)
+        public Player(MainGame mg, Texture2D texture, string name, GamePadCapabilities capability, PlayerIndex pi, GamePadState gpstate, int frameWidth, int frames) : base(texture, frameWidth, frames)
         {
             // Check the device for Player One
             this.capability = capability;
             playerindex = pi;
             state = gpstate;
+            currentFrame = frames;
 
-            scale = .75f;
+            // scale reduced
+            scale = .1f;
+
             mG = mg;
+            this.name = name;
+
+            _frames = 1;
+
+            hasDied = false;
+            gameover = false;
+
+            // set score to 0
+            score = 0;
+
+            // set speed
+            speed = 3;
+
             
+
         }
 
         /// <summary>
@@ -142,15 +186,39 @@ namespace GDAPS2
             position.X = MathHelper.Clamp(position.X, 0, (mG.ScreenWidth + 25) - _Rectangle.Width);
             position.Y = MathHelper.Clamp(position.Y, 0, (mG.ScreenHeight + 25) - _Rectangle.Height);
 
-            int deathtime = (int)mG.timer;
+            // add points if needed
+            AddPoints();
+
+            // death time equals the seconds he was alive
+            int deathtime = mG.seconds;
+
+            // track the player if he survived a minute
+            int minutes = 0;
+
+            // if the deathtime (seconds) 60 then start adding minutes
+            if (deathTimeSec == 60)
+            {
+                // increment minutes
+                minutes++;
+
+                // deathtime now equals minutes
+                deathTimeMin = minutes;
+
+            }
 
             // check death time
             if (hasDied == true)
             {
-                this.deathTime = deathtime;
-            }
-        }
+                // initialize deathtime
+                this.deathTimeSec = deathtime;
 
+                this.deathTimeMin = minutes;
+
+            }
+
+            
+
+        }
         /// <summary>
         /// Overwrite sprite draw method to utilize player state sprite effects
         /// </summary>
@@ -231,7 +299,36 @@ namespace GDAPS2
             }
         }
 
+        /// <summary>
+        /// Add Points for Lasting Longer
+        /// </summary>
+        public void AddPoints()
+        {
+            // temp to hold score until end of game
+            int temp = score;
 
+            // check if player has not died yet
+            if (hasDied == false)
+            {
+                // check how long seconds has been running, if player survived long enough
+                if (mG.seconds == 30)
+                {
+                    // add default point to player score
+                    score = score + 1;
+                }
+                if (mG.minutes == 1)
+                {
+                    // add default point to player score
+                    score = score + 1;
+                }
+            }
+            else
+            {
+                // check score is still temp score when player dies
+                score = temp;
+            }
+
+        }
     }
 }
 
