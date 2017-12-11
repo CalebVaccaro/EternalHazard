@@ -1,0 +1,55 @@
+using (StreamReader reader = new StreamReader(path))
+                {
+                    // save the player locations
+                    for (int i = 0; i < 8; i++)
+                    {
+                        string input = reader.ReadLine().ToString();
+                        string[] inputArray = input.Split(':');
+
+                        if (i == 0)
+                        {
+                            p1Spawn.X = Convert.ToInt16(inputArray[1]);
+                        }
+                        else if (i == 1)
+                        {
+                            p1Spawn.Y = Convert.ToInt16(inputArray[1]);
+                        }
+                        else if (i == 2)
+                        {
+                            p2Spawn.X = Convert.ToInt16(inputArray[1]);
+                        }
+                        else if (i == 3)
+                        {
+                            p2Spawn.Y = Convert.ToInt16(inputArray[1]);
+                        }
+                        else if (i == 4)
+                        {
+                            p3Spawn.X = Convert.ToInt16(inputArray[1]);
+                        }
+                        else if (i == 5)
+                        {
+                            p3Spawn.Y = Convert.ToInt16(inputArray[1]);
+                        }
+                        else if (i == 6)
+                        {
+                            p4Spawn.X = Convert.ToInt16(inputArray[1]);
+                        }
+                        else if (i == 7)
+                        {
+                            p4Spawn.Y = Convert.ToInt16(inputArray[1]);
+                        }
+                    }
+
+                    // Read in the background image
+                    string input2 = reader.ReadLine().ToString();
+                    string[] input2Array = input2.Split(' ');
+                    BackgroundImageTextBox.Text = input2Array[2];
+                    backgroundImage = Image.FromFile(input2Array[2]);
+
+                    // Read in the map name
+                    string input3 = reader.ReadLine().ToString();
+                    string[] input3Array = input3.Split(' ');
+                    currentMapDomain.Text = input3Array[2].ToString();
+
+                    // Read in Opponent locations
+                }
