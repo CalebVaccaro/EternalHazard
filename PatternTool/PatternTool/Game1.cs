@@ -566,7 +566,7 @@ namespace PatternTool
         public void Save()
         {
             //new streamwriter
-            StreamWriter writer = new StreamWriter("settings.ini");
+            StreamWriter writer = new StreamWriter("BulletSettings.ini");
 
             //heading to differentiate between different categories of settings
             writer.WriteLine("[Spiral]");
