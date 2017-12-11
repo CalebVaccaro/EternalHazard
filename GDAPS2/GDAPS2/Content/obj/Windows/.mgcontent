@@ -4,26 +4,27 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/game1.png</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/enemy1.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/Score.spritefont</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/gem1.png</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/playerMonk.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/dojoBG.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/menu.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/pause.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/bulletSheet.png</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/enemy.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/gameOver.png</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/gameScreen.png</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/player1.png</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/splashScreen.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/eternal.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/hazard.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/splashBackground.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/tree.png</File>
-    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/gameOverKey.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/cyclonebullet.png</File>
     <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/menuKey.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/astralBG.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/enemy1.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/enemy2.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/enemy3.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/player1.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/player2.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/player3.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/player4.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/ruinsBG.png</File>
+    <File>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/pauseKey.png</File>
   </SourceFiles>
 </SourceFileCollection>

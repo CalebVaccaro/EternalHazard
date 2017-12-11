@@ -69,17 +69,15 @@ namespace GDAPS2
         // Rectangle for all Background Vectors
         private Rectangle mainFrame;
 
-        //Texture2Ds for Loading Backgroun/Menu Images      
-        Texture2D dojo;
-        Texture2D gameover;
-        Texture2D playerTexture;
-        Texture2D enemyTexture;
+        //Additional Game Screen Attributes
+        private Texture2D pause;
+        private Texture2D pauseKey;
+        private Texture2D gameover;
+        private Texture2D gameoverKey;
+        private Vector2 gameoverCoords;
         public Texture2D bulletTexture;       
-        Texture2D splashScreen;
-        Texture2D gameoverKey;
-        Vector2 gameoverCoords;
-
-        //Intro Animation Attributes
+        
+        //Intro Animation and Main Menu Attributes
         private Texture2D menuPad;
         private Texture2D menuKey;
         private Texture2D splash;
@@ -95,6 +93,19 @@ namespace GDAPS2
         private int treeTarget;
         private float menuOpacity;
 
+        //Player Textures
+        private Texture2D playerOneTexture;
+        private Texture2D playerTwoTexture;
+        private Texture2D playerThreeTexture;
+        private Texture2D playerFourTexture;
+        private Texture2D enemyOneTexture;
+        private Texture2D enemyTwoTexture;
+        private Texture2D enemyThreeTexture;
+
+        //Map Textures
+        private Texture2D ruins;
+        private Texture2D dojo;
+        private Texture2D astral;
 
         #endregion
 
@@ -222,8 +233,13 @@ namespace GDAPS2
 
 
             //creating each var Texture for each asset needed to be put into the game         
-            playerTexture = Content.Load<Texture2D>("player1");            // monk texture
-            enemyTexture = Content.Load<Texture2D>("enemy");               // enemy texture
+            playerOneTexture = Content.Load<Texture2D>("player1");         // monk texture blue
+            playerTwoTexture = Content.Load<Texture2D>("player2");         // monk texture red
+            playerThreeTexture = Content.Load<Texture2D>("player3");       // monk texture green
+            playerFourTexture = Content.Load<Texture2D>("player4");        // monk texture yellow
+            enemyOneTexture = Content.Load<Texture2D>("enemy1");           // enemy texture level 1
+            enemyTwoTexture = Content.Load<Texture2D>("enemy2");           // enemy texture level 2
+            enemyThreeTexture = Content.Load<Texture2D>("enemy3");         // enemy texture level 3
             bulletTexture = Content.Load<Texture2D>("cyclonebullet");      // bullet texture
             splash = Content.Load<Texture2D>("splashBackground");          // menu texture 
             tree = Content.Load<Texture2D>("tree");                        // tree texture
@@ -231,11 +247,14 @@ namespace GDAPS2
             hazard = Content.Load<Texture2D>("hazard");                    // Hazard Title Texture
             menuPad = Content.Load<Texture2D>("menu");                     // Controller Menu
             menuKey = Content.Load<Texture2D>("menuKey");                  // Keyboard Menu
-            dojo = Content.Load<Texture2D>("dojoBG");                      // dojo background texture
-            gameover = Content.Load<Texture2D>("gameOver");                // gameover text texture
-            font = Content.Load<SpriteFont>("Score");                      // Font Score texture
-            splashScreen = Content.Load<Texture2D>("splashscreen");        // Spalsh Screen Texture
+            ruins = Content.Load<Texture2D>("ruinsBG");                    // level 1 background texture
+            dojo = Content.Load<Texture2D>("dojoBG");                      // level 2 background texture
+            astral = Content.Load<Texture2D>("astralBG");                  // level 3 background texture
+            pause = Content.Load<Texture2D>("pause");                      // pause screen texture
+            pauseKey = Content.Load<Texture2D>("pauseKey");                // pause keyboard Texture
+            gameover = Content.Load<Texture2D>("gameOver");                // gameover texture
             gameoverKey = Content.Load<Texture2D>("gameOverKey");          // Game Over Keyboard Texture
+            font = Content.Load<SpriteFont>("Score");                      // Font Score texture
 
             //Background Rectangle
             mainFrame = new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);   
@@ -658,7 +677,7 @@ namespace GDAPS2
                 // --------- GAME STATE ----------- //
                 case GameState.Game:
                     //drawing the background
-                    spriteBatch.Draw(dojo, mainFrame, Color.White);
+                    spriteBatch.Draw(ruins, mainFrame, Color.White);
 
                     //foreach sprite in the list _sprites
                     //Draw the sprites in the spritebatch
@@ -786,18 +805,18 @@ namespace GDAPS2
                     _sprites = new List<Sprite>
                     {
                         // Player 1
-                        new Player(this,playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this,playerOneTexture, capability1, playerone, state1, 100, 1){
                             position = new Vector2(200,200)
                         },
 
                         // Add Enemy to the Sprite List
-                        new Enemy(this, enemyTexture, 400, 1){
+                        new Enemy(this, enemyOneTexture, 100, 1){
                             //Set position to the Middle of Screen
-                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 50,graphics.GraphicsDevice.Viewport.Height / 2)
                         },
 
                         // Add Bulet Object to the Sprite List
-                        new Bullet(this, bulletTexture, 200, 1)
+                        new Bullet(this, bulletTexture, 50, 1)
                     };
 
                     break;
@@ -810,19 +829,19 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this,playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this,playerOneTexture, capability1, playerone, state1, 100, 1){
                             position = new Vector2(200,200),
                             playerColor = Color.Blue,
                         },
 
                         // Add Enemy to the Sprite List
-                        new Enemy(this, enemyTexture, 400, 1){
+                        new Enemy(this, enemyOneTexture, 100, 1){
                             //Set position to the Middle of Screen
-                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 50,graphics.GraphicsDevice.Viewport.Height / 2)
                         },
 
                         // Add Bulet Object to the Sprite List
-                        new Bullet(this, bulletTexture, 200, 1)
+                        new Bullet(this, bulletTexture, 50, 1)
                     };
                     break;
 
@@ -836,24 +855,24 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this, playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this, playerOneTexture, capability1, playerone, state1, 100, 1){
                             position = new Vector2(200,200),
-                            playerColor = Color.Blue,
+                            playerColor = Color.White,
                         },
                         // Player 2
-                        new Player(this, playerTexture, capability2, playertwo, state2, 50, 8){
+                        new Player(this, playerTwoTexture, capability2, playertwo, state2, 100, 1){
                             position = new Vector2(ScreenWidth - 200,200),
-                            playerColor = Color.Green,
+                            playerColor = Color.White,
                         },
 
                         // Add Enemy to the Sprite List
-                        new Enemy(this, enemyTexture, 400, 1){
+                        new Enemy(this, enemyOneTexture, 100, 1){
                             //Set position to the Middle of Screen
-                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 50,graphics.GraphicsDevice.Viewport.Height / 2)
                         },
 
                         // Add Bulet Object to the Sprite List
-                        new Bullet(this, bulletTexture, 200, 1)
+                        new Bullet(this, bulletTexture, 50, 1)
                     };
 
                     break;
@@ -867,29 +886,29 @@ namespace GDAPS2
                         // Add Players to Sprite List
 
                         // Player 1
-                        new Player(this, playerTexture, capability1, playerone, state1, 50, 8){
+                        new Player(this, playerOneTexture, capability1, playerone, state1, 100, 1){
                             position = new Vector2(200,200),
-                            playerColor = Color.Blue,
+                            playerColor = Color.White,
                         },
                         // Player 2
-                        new Player(this, playerTexture, capability2, playertwo, state2, 50, 8){
+                        new Player(this, playerTwoTexture, capability2, playertwo, state2, 100, 1){
                             position = new Vector2(ScreenWidth - 200,200),
-                            playerColor = Color.Green,
+                            playerColor = Color.White,
                         },
                         // Player 3
-                        new Player(this, playerTexture, capability3, playerthree, state3, 50, 8){
+                        new Player(this, playerThreeTexture, capability3, playerthree, state3, 100, 1){
                             position = new Vector2(200,ScreenHeight - 200),
-                            playerColor = Color.Purple,
+                            playerColor = Color.White,
                         },
 
                         // Add Enemy to the Sprite List
-                        new Enemy(this, enemyTexture, 400, 1){
+                        new Enemy(this, enemyOneTexture, 100, 1){
                             //Set position to the Middle of Screen
-                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 200,graphics.GraphicsDevice.Viewport.Height / 2)
+                            position = new Vector2(graphics.GraphicsDevice.Viewport.Width / 2 - 50,graphics.GraphicsDevice.Viewport.Height / 2)
                         },
 
                         // Add Bulet Object to the Sprite List
-                        new Bullet(this, bulletTexture, 200, 1)
+                        new Bullet(this, bulletTexture, 50, 1)
                     };
 
                     break;

@@ -163,14 +163,14 @@ namespace GDAPS2
                 case PlayerDirection.MovingRight:
 
                     //draw the source image animation
-                    spirtebatch.Draw(_texture, position, new Rectangle(currentFrame * _frameWidth, 0, _frameWidth, _texture.Height), Color.White, _rotation, origin, 1, SpriteEffects.None, 0);
+                    spirtebatch.Draw(_texture, position, new Rectangle(0, 0, _texture.Width, _texture.Height), Color.White, _rotation, origin, 1, SpriteEffects.None, 0);
                     break;
 
                 //when the player is moving left
                 case PlayerDirection.MovingLeft:
 
                     //flip the source image
-                    spirtebatch.Draw(_texture, position, new Rectangle(currentFrame * _frameWidth, 0, _frameWidth, _texture.Height), Color.White, _rotation, origin, 1, SpriteEffects.FlipHorizontally, 0);
+                    spirtebatch.Draw(_texture, position, new Rectangle(0, 0, _texture.Width, _texture.Height), Color.White, _rotation, origin, 1, SpriteEffects.FlipHorizontally, 0);
                     break;
             }
         }

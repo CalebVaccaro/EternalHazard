@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/player1.png</SourceFile>
-  <SourceTime>2017-12-10T13:41:52.2366617-05:00</SourceTime>
+  <SourceTime>2017-12-11T04:38:19.6291738-05:00</SourceTime>
   <DestFile>C:/Users/tucke/Dropbox/RIT/Game Dev &amp; Alg/Group Project/Repository/EternalHazard/GDAPS2/GDAPS2/Content/bin/Windows/player1.xnb</DestFile>
-  <DestTime>2017-12-10T13:53:14.6535586-05:00</DestTime>
+  <DestTime>2017-12-11T04:42:07.3212007-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T10:05:36-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
